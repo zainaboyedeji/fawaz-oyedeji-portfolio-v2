@@ -10,16 +10,18 @@ import AboutMe from "./pages/AboutMe";
 function App() {
   return (
     <BrowserRouter>
-      <div className="flex w-full h-screen">
-        <SideBar />
-        <div  className="w-3/4">
+      <div className="flex flex-col md:flex-row w-full h-screen">
+       <div  className="w-full md:w-1/4" >
+       <SideBar/>
+       </div>
+        <div className="w-full md:w-3/4">
           <Routes>
             <Route path="/" element={<LandingPage />} />
             <Route path="/home" element={<LandingPage />} />
             <Route path="/projects" element={<Projects />} />
-            <Route path="/commissions" element={<Commissions/>} />
-            <Route path="/contact-me" element={<ContactMe/>} />
-            <Route path="/about-me" element={<AboutMe/>} />
+            <Route path="/commissions" element={<Commissions />} />
+            <Route path="/contact-me" element={<ContactMe />} />
+            <Route path="/about-me" element={<AboutMe />} />
           </Routes>
         </div>
       </div>

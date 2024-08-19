@@ -19,24 +19,26 @@ function SideBar() {
 
   return (
     <div>
-      <div className="flex items-center justify-between fixed top-4 left-4 right-4 z-50">
-        <div className="h-8 w-8">
+      {/* Top Navigation for Mobile */}
+      <div className="flex items-center justify-between fixed top-4 left-4 right-4 z-50 md:hidden">
+        <div className="text-white text-xl font-bold">
           <NavLink to="/">
             FAWAZ <br /> OYEDEJI.
           </NavLink>
         </div>
-        <button className="md:hidden text-white" onClick={toggleSidebar}>
+        <button className="text-white" onClick={toggleSidebar}>
           {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
         </button>
       </div>
 
       {/* Sidebar */}
       <div
-        className={`fixed top-0 left-0 h-screen w-64 bg-gray-900 text-white p-8 flex flex-col justify-start z-40 transform ${
+        className={`fixed top-0 left-0 h-screen w-64 text-white p-8 flex flex-col justify-between z-40 transform ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         } transition-transform duration-300 ease-in-out md:translate-x-0 md:w-1/4`}
       >
-        <div className="mb-8">
+        {/* Logo and Navigation */}
+        <div>
           <h1 className="text-2xl md:text-3xl font-bold mb-8">
             <NavLink
               to="/"
@@ -96,7 +98,9 @@ function SideBar() {
             </ul>
           </nav>
         </div>
-        <div className="mt-16 flex space-x-4">
+
+        {/* Social Links */}
+        <div className="flex space-x-4 mt-8">
           <a
             href="https://www.instagram.com/fawaz.oyedeji/"
             target="_blank"
@@ -144,6 +148,14 @@ function SideBar() {
           </a>
         </div>
       </div>
+
+      {/* Overlay for Mobile when Sidebar is Open */}
+      {isOpen && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-50 z-30 md:hidden"
+          onClick={toggleSidebar}
+        ></div>
+      )}
     </div>
   );
 }

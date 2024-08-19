@@ -1,16 +1,8 @@
-export function Footer({ title = "" }) {
+export function Footer() {
   return (
     <footer>
-      <a href="https://www.framer.com/motion/" target="_blank" rel="noreferrer">
-        <img src="/logo.png" alt="logo" className="logoImg"/>
-      </a>
-      <a
-        href="https://www.framer.com/docs/scroll-animations/"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <code>{title}</code>
-      </a>
+      <img src="/logo.svg" alt="logo" className="logoImg" />
+      <p className="footerParagraph">2024 Fawaz Oyedeji by Zainab Oyedeji</p>
     </footer>
   );
 }

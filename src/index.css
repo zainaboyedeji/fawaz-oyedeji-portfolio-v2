@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   --black: #000000;
   --ash-black: #222;
@@ -12,7 +16,7 @@ body {
   --orange: #fd7702;
   --yellow: #ffbb00;
 
-  --background: var(--red);
+  --background: var(--black);
   --accent: var(--white);
 
   margin: 0;
@@ -41,7 +45,7 @@ h1 {
   font-weight: 700;
   letter-spacing: -1px;
   line-height: 1.2;
-  text-align: center;
+  /* text-align: center; */
   margin: 100px 0 40px;
 }
 
@@ -63,7 +67,6 @@ footer {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 20px;
   background-image: radial-gradient(
     rgba(0, 0, 0, 0) 1px,
     var(--background) 1px
@@ -76,7 +79,7 @@ footer {
   line-height: 14px;
 }
 
-footer::before {
+/* footer::before {
   display: block;
   content: "";
   position: absolute;
@@ -95,7 +98,7 @@ footer svg {
 footer a {
   text-decoration: none;
   color: var(--accent);
-}
+} */
 
 code {
   font-family: input-mono, monospace;
@@ -127,7 +130,7 @@ h1 {
   font-weight: 700;
   letter-spacing: -3px;
   line-height: 1.2;
-  text-align: center;
+  /* text-align: center; */
   margin: 100px 0;
 }
 
@@ -173,8 +176,8 @@ img {
 }
 
 .logoImg{
-  width:1rem;
-  height:1rem;
+  width:3rem;
+  height:3rem;
 }
 
 .progress {
@@ -184,8 +187,4 @@ img {
   height: 5px;
   background: var(--accent);
   bottom: 100px;
-}
-
-.flexTest{
-  display: flex;
 }

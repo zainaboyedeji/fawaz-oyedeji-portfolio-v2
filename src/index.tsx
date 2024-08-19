@@ -11,7 +11,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <App />
-    <Footer title="Parallax" />
+    <Footer/>
   </React.StrictMode>
 );
 

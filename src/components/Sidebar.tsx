@@ -19,13 +19,16 @@ function SideBar() {
 
   return (
     <div>
-      {/* Toggle Button */}
-      <button
-        className="md:hidden fixed top-4 left-4 z-50 text-white"
-        onClick={toggleSidebar}
-      >
-        {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
-      </button>
+      <div className="flex items-center justify-between fixed top-4 left-4 right-4 z-50">
+        <div className="h-8 w-8">
+          <NavLink to="/">
+            FAWAZ <br /> OYEDEJI.
+          </NavLink>
+        </div>
+        <button className="md:hidden text-white" onClick={toggleSidebar}>
+          {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+        </button>
+      </div>
 
       {/* Sidebar */}
       <div
@@ -35,34 +38,58 @@ function SideBar() {
       >
         <div className="mb-8">
           <h1 className="text-2xl md:text-3xl font-bold mb-8">
-            <NavLink to="/" className="hover:text-gray-400" onClick={toggleSidebar}>
+            <NavLink
+              to="/"
+              className="hover:text-gray-400"
+              onClick={toggleSidebar}
+            >
               FAWAZ <br /> OYEDEJI.
             </NavLink>
           </h1>
           <nav>
             <ul className="space-y-4">
               <li>
-                <NavLink to="/" className="hover:text-gray-400" onClick={toggleSidebar}>
+                <NavLink
+                  to="/"
+                  className="hover:text-gray-400"
+                  onClick={toggleSidebar}
+                >
                   home
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/projects" className="hover:text-gray-400" onClick={toggleSidebar}>
+                <NavLink
+                  to="/projects"
+                  className="hover:text-gray-400"
+                  onClick={toggleSidebar}
+                >
                   projects
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/commissions" className="hover:text-gray-400" onClick={toggleSidebar}>
+                <NavLink
+                  to="/commissions"
+                  className="hover:text-gray-400"
+                  onClick={toggleSidebar}
+                >
                   commissions
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/about" className="hover:text-gray-400" onClick={toggleSidebar}>
+                <NavLink
+                  to="/about"
+                  className="hover:text-gray-400"
+                  onClick={toggleSidebar}
+                >
                   about
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/contact" className="hover:text-gray-400" onClick={toggleSidebar}>
+                <NavLink
+                  to="/contact"
+                  className="hover:text-gray-400"
+                  onClick={toggleSidebar}
+                >
                   contact
                 </NavLink>
               </li>

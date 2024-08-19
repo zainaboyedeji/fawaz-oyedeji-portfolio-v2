@@ -77,7 +77,7 @@ function SideBar() {
               </li>
               <li>
                 <NavLink
-                  to="/about"
+                  to="/about-me"
                   className="hover:text-gray-400"
                   onClick={toggleSidebar}
                 >
@@ -86,7 +86,7 @@ function SideBar() {
               </li>
               <li>
                 <NavLink
-                  to="/contact"
+                  to="/contact-me"
                   className="hover:text-gray-400"
                   onClick={toggleSidebar}
                 >

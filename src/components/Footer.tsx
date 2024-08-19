@@ -1,8 +1,14 @@
-export function Footer() {
+import { Logo } from "./Logo";
+
+export function Footer({ title = "", url = "" }) {
   return (
-    <footer>
-      <img src="/logo.svg" alt="logo" className="logoImg" />
-      <p className="footerParagraph">2024 Fawaz Oyedeji by Zainab Oyedeji</p>
+    <footer id="sandbox-title">
+      <a href="https://www.framer.com/motion/" target="_blank" rel="noreferrer">
+        <Logo />
+      </a>
+      <a href={url} target="_blank" rel="noreferrer">
+        <code>{title}</code>
+      </a>
     </footer>
   );
 }

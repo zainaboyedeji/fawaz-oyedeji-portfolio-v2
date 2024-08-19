@@ -1,45 +1,68 @@
+import { useState } from "react";
 import {
-    FaInstagram,
-    FaTwitter,
-    FaLinkedin,
-    FaYoutube,
-    FaShareAlt,
-  } from "react-icons/fa";
-  import { NavLink } from "react-router-dom";
-  
-  function SideBar() {
-    return (
-      <div className="w-1/4 h-screen fixed top-0 left-0 text-white p-8 flex flex-col justify-start">
+  FaInstagram,
+  FaTwitter,
+  FaLinkedin,
+  FaYoutube,
+  FaShareAlt,
+  FaBars,
+  FaTimes,
+} from "react-icons/fa";
+import { NavLink } from "react-router-dom";
+
+function SideBar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <div>
+      {/* Toggle Button */}
+      <button
+        className="md:hidden fixed top-4 left-4 z-50 text-white"
+        onClick={toggleSidebar}
+      >
+        {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+      </button>
+
+      {/* Sidebar */}
+      <div
+        className={`fixed top-0 left-0 h-screen w-64 bg-gray-900 text-white p-8 flex flex-col justify-start z-40 transform ${
+          isOpen ? "translate-x-0" : "-translate-x-full"
+        } transition-transform duration-300 ease-in-out md:translate-x-0 md:w-1/4`}
+      >
         <div className="mb-8">
-          <h1 className="text-3xl font-bold mb-8">
-            <NavLink to="/" className="hover:text-gray-400">
+          <h1 className="text-2xl md:text-3xl font-bold mb-8">
+            <NavLink to="/" className="hover:text-gray-400" onClick={toggleSidebar}>
               FAWAZ <br /> OYEDEJI.
             </NavLink>
           </h1>
           <nav>
             <ul className="space-y-4">
               <li>
-                <NavLink to="/" className="hover:text-gray-400">
+                <NavLink to="/" className="hover:text-gray-400" onClick={toggleSidebar}>
                   home
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/projects" className="hover:text-gray-400">
+                <NavLink to="/projects" className="hover:text-gray-400" onClick={toggleSidebar}>
                   projects
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/commissions" className="hover:text-gray-400">
+                <NavLink to="/commissions" className="hover:text-gray-400" onClick={toggleSidebar}>
                   commissions
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/about" className="hover:text-gray-400">
+                <NavLink to="/about" className="hover:text-gray-400" onClick={toggleSidebar}>
                   about
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/contact" className="hover:text-gray-400">
+                <NavLink to="/contact" className="hover:text-gray-400" onClick={toggleSidebar}>
                   contact
                 </NavLink>
               </li>
@@ -94,8 +117,8 @@ import {
           </a>
         </div>
       </div>
-    );
-  }
-  
-  export default SideBar;
-  
+    </div>
+  );
+}
+
+export default SideBar;

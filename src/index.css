@@ -185,3 +185,7 @@ img {
   background: var(--accent);
   bottom: 100px;
 }
+
+.flexTest{
+  display: flex;
+}

@@ -32,7 +32,26 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-h1,
+::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  -webkit-border-radius: 1ex;
+}
+
+::-webkit-scrollbar-corner {
+  background: var(--background);
+}
+
+html {
+  scroll-snap-type: y mandatory;
+}
+
+/* h1,
 h2,
 h3 {
   font-family: sofia-pro, sans-serif;
@@ -45,7 +64,6 @@ h1 {
   font-weight: 700;
   letter-spacing: -1px;
   line-height: 1.2;
-  /* text-align: center; */
   margin: 100px 0 40px;
 }
 
@@ -79,7 +97,7 @@ footer {
   line-height: 14px;
 }
 
-/* footer::before {
+footer::before {
   display: block;
   content: "";
   position: absolute;
@@ -98,7 +116,7 @@ footer svg {
 footer a {
   text-decoration: none;
   color: var(--accent);
-} */
+}
 
 code {
   font-family: input-mono, monospace;
@@ -130,7 +148,6 @@ h1 {
   font-weight: 700;
   letter-spacing: -3px;
   line-height: 1.2;
-  /* text-align: center; */
   margin: 100px 0;
 }
 
@@ -187,4 +204,4 @@ img {
   height: 5px;
   background: var(--accent);
   bottom: 100px;
-}
+} */

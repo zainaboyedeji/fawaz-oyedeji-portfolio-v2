@@ -11,15 +11,15 @@ function AboutMe() {
 
   return (
     <>
-      <div className="flex flex-wrap md:flex-col justify-center items-center min-h-screen">
-        <div className="w-2/5 text-center mb-5 md:w-full flex justify-center">
+      <div className="flex flex-col md:flex-row justify-center items-center min-h-screen px-4 md:px-8">
+        <div className="w-full md:w-2/5 text-center mb-5 md:mb-0 flex justify-center">
           <img
             src="/fawaz-oyedeji.jpg"
             alt="fawwaz"
-            className="w-[18rem] h-[18rem] rounded-full"
+            className="w-48 h-48 sm:w-60 sm:h-60 md:w-[18rem] md:h-[18rem] rounded-full"
           />
         </div>
-        <div className="w-3/5 mt-8 md:w-full flex flex-col justify-center">
+        <div className="w-full md:w-3/5 mt-5 md:mt-8 flex flex-col justify-center text-sm md:text-base">
           <p className="mb-5">
             Fawaz Oyedeji is a documentary photographer and historian based in
             Lagos, Nigeria. He holds a background in Mass Communication from

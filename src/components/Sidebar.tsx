@@ -39,7 +39,6 @@ function SideBar() {
       >
         {/* Logo and Navigation */}
         <div>
-          <h1 className="text-2xl md:text-3xl font-bold mb-8">
             <NavLink
               to="/"
               className="hover:text-gray-400"
@@ -47,7 +46,6 @@ function SideBar() {
             >
               FAWAZ <br /> OYEDEJI.
             </NavLink>
-          </h1>
           <nav>
             <ul className="space-y-4">
               <li>

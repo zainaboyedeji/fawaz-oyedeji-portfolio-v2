@@ -15,14 +15,23 @@ function Projects() {
           } as any
         }
       >
-        Galleries
+        Projects
       </h1>
       <ul>
         <li>
-        <NavLink to="/amsterdam">Amsterdam Zuid nightwalk</NavLink>
+        <NavLink to="/projects/mo_advert_mo_power">Mo Advert Mo Power</NavLink>
         </li>
         <li>
-        <NavLink to="/london">White lines of Canary Wharf</NavLink>
+        <NavLink to="/projects/awakening">Awakening</NavLink>
+        </li>
+        <li>
+        <NavLink to="/projects/yours-in-arms">Yours In Arms</NavLink>
+        </li>
+        <li>
+        <NavLink to="/projects/resale">Resale</NavLink>
+        </li>
+        <li>
+        <NavLink to="/projects/otto-daily">Otto Daily</NavLink>
         </li>
       </ul>
       <motion.div

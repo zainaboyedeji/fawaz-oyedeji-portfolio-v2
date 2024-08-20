@@ -18,6 +18,7 @@ import {
   resalePhotosMetadata,
   yoursinarmsPhotosMetadata,
 } from "./data";
+import CVPage from "./pages/CVPage";
 
 function App() {
   return (
@@ -90,6 +91,7 @@ function App() {
                 </AnimatePresence>
               }
             />
+            <Route path="/my-cv" element={<CVPage />} />
             <Route path="/contact-me" element={<ContactMe />} />
             <Route path="/about-me" element={<AboutMe />} />
             <Route path="/projects" element={<Projects />} />

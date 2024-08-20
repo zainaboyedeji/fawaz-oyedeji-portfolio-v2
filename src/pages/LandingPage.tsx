@@ -21,7 +21,7 @@ function Image({ id }: { id: number }) {
       <div ref={ref}>
         <img src={`/${id}.jpg`} alt={`#00${id}`} />
       </div>
-      <motion.h2 style={{ y }}>{`#00${id}`}</motion.h2>
+      <motion.h2 style={{ y }}>{`#0${id}`}</motion.h2>
     </section>
   );
 }
@@ -59,8 +59,8 @@ function LandingPage() {
         }
 
         section > div {
-          width: 300px;
-          height: 400px;
+          width: 100%;
+          height: 100%;
           position: relative;
           max-height: 90vh;
           margin: 20px;

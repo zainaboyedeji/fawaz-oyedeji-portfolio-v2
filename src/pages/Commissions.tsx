@@ -6,14 +6,18 @@ function Commissions() {
   return (
     <>
       <style>{`
-.projectList{
+.commissionsUL{
   width: 100%;
-  padding-top: 25vw;
   justify-content: center;
   align-items: center;
   display: flex;
   flex-direction: column;
   list-style: none;
+}
+  .commissionsLI {
+  font-size: 2rem;
+  margin-bottom: 1.6rem;
+  text-decoration:underline;
 }
 
 h1,
@@ -24,20 +28,7 @@ h3 {
   font-style: normal;
 }
 
-h1 {
-  --base-width: 8.2vw;
-  font-size: clamp(20px, var(--base-width), 700px);
-  font-weight: 700;
-  letter-spacing: -0.15rem;
-  line-height: 1.2;
-  text-align: center;
-  margin: 100px 0;
-  white-space: nowrap;
-  position: absolute;
-  top: -10vw;
-  left: 50%;
-  transform: translateX(-50%);
-}
+
 
 h2 {
   font-size: clamp(20px, 6vw, 700px);
@@ -190,33 +181,22 @@ img {
 }
       `}</style>
       <article>
-        <h1
-          style={
-            {
-              "--base-width": "14vw",
-              top: "-12vw",
-              letterSpacing: "-1.4vw",
-              x: "-50%",
-            } as any
-          }
-        >
-          Commissions
-        </h1>
-        <ul className="projectList">
-          <li>
+        <h1 className="text-center text-8xl font-bold mt-10">Commissions</h1>
+        <ul className="commissionsUL mt-5">
+          <li className="commissionsLI">
             <NavLink to="/commissions/gun-for-hire">Gun For Hire</NavLink>
           </li>
-          <li>
+          <li className="commissionsLI">
             <NavLink to="/commissions/new-culture-studios-ibadan">
               New Culture Studios Ibadan
             </NavLink>
           </li>
-          <li>
+          <li className="commissionsLI">
             <NavLink to="/commissions/nigerian-policing-programme">
               Nigerian Policing Programme
             </NavLink>
           </li>
-          <li>
+          <li className="commissionsLI">
             <NavLink to="/commissions/hidden-flows">Hidden Flows</NavLink>
           </li>
         </ul>

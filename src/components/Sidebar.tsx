@@ -21,7 +21,7 @@ function SideBar() {
     <div>
       {/* Top Navigation for Mobile */}
       <div className="flex items-center justify-between fixed top-4 left-4 right-4 z-50 md:hidden">
-        <div className="text-white text-xl font-bold">
+        <div className="text-xl font-bold">
           <NavLink to="/">
             FAWAZ <br /> OYEDEJI.
           </NavLink>
@@ -33,12 +33,13 @@ function SideBar() {
 
       {/* Sidebar */}
       <div
-        className={`fixed top-0 left-0 h-screen w-64 text-white p-8 flex flex-col justify-between z-40 transform ${
+        className={`fixed top-0 left-0 h-screen w-64 text-white p-8 flex flex-col justify-between z-40 mt-5 transform ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         } transition-transform duration-300 ease-in-out md:translate-x-0 md:w-1/4`}
       >
         {/* Logo and Navigation */}
         <div>
+          <div className="text-5xl font-bold">
             <NavLink
               to="/"
               className="hover:text-gray-400"
@@ -46,8 +47,9 @@ function SideBar() {
             >
               FAWAZ <br /> OYEDEJI.
             </NavLink>
-          <nav>
-            <ul className="space-y-4">
+          </div>
+          <nav className="mt-10">
+            <ul className="mb-4">
               <li>
                 <NavLink
                   to="/"

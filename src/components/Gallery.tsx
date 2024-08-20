@@ -26,20 +26,12 @@ export function Gallery({ category, alt, title, titleWidth, photos }: Props) {
     <>
       <style>{`
 
-
-h1 {
-  --base-width: 8.2vw;
-  font-size: clamp(20px, var(--base-width), 700px);
-  font-weight: 700;
-  letter-spacing: -0.15rem;
-  line-height: 1.2;
-  text-align: center;
-  margin: 100px 0;
-  white-space: nowrap;
-  position: absolute;
-  top: -10vw;
-  left: 50%;
-  transform: translateX(-50%);
+      h1,
+h2,
+h3 {
+  font-family: sofia-pro, sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }
 
 h2 {
@@ -81,11 +73,6 @@ p {
   color: var(--accent);
 }
 
-code {
-  font-family: input-mono, monospace;
-  font-weight: 400;
-  font-style: normal;
-}
 
 #progress {
   position: fixed;
@@ -109,15 +96,7 @@ circle {
   stroke: var(--accent);
 }
 
-h2 {
-  margin: 0;
-  color: var(--accent);
-  left: calc(75vw);
-  font-weight: 700;
-  letter-spacing: -3px;
-  line-height: 1.2;
-  position: absolute;
-}
+
 
 section {
   height: 100vh;
@@ -178,7 +157,7 @@ img {
 
       `}</style>
       <article>
-        <h1 style={{ "--base-width": `${titleWidth}vw`, x: "-50%" } as any}>
+      <h1 className="text-center text-8xl font-bold">
           {title}
         </h1>
         {photos.map(({ aspectRatio }, index) => (

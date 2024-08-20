@@ -6,14 +6,18 @@ function Commissions() {
   return (
     <>
       <style>{`
-.projectList{
+.projectUL{
   width: 100%;
-  padding-top: 25vw;
   justify-content: center;
   align-items: center;
   display: flex;
   flex-direction: column;
   list-style: none;
+}
+   .projectsLI {
+  font-size: 2rem;
+  margin-bottom: 1.6rem;
+  text-decoration:underline;
 }
 
 h1,
@@ -24,20 +28,6 @@ h3 {
   font-style: normal;
 }
 
-h1 {
-  --base-width: 8.2vw;
-  font-size: clamp(20px, var(--base-width), 700px);
-  font-weight: 700;
-  letter-spacing: -0.15rem;
-  line-height: 1.2;
-  text-align: center;
-  margin: 100px 0;
-  white-space: nowrap;
-  position: absolute;
-  top: -10vw;
-  left: 50%;
-  transform: translateX(-50%);
-}
 
 h2 {
   font-size: clamp(20px, 6vw, 700px);
@@ -190,34 +180,25 @@ img {
 }
       `}</style>
       <article>
-        <h1
-          style={
-            {
-              "--base-width": "14vw",
-              top: "-12vw",
-              letterSpacing: "-1.4vw",
-              x: "-50%",
-            } as any
-          }
-        >
+      <h1 className="text-center text-8xl font-bold mt-10">
           Projects
         </h1>
-        <ul className="projectList">
-          <li>
+        <ul className="projectUL mt-5">
+          <li className="projectsLI">
             <NavLink to="/projects/mo-advert-mo-power">
               Mo Advert Mo Power
             </NavLink>
           </li>
-          <li>
+          <li className="projectsLI">
             <NavLink to="/projects/awakening">Awakening</NavLink>
           </li>
-          <li>
+          <li className="projectsLI">
             <NavLink to="/projects/yours-in-arms">Yours In Arms</NavLink>
           </li>
-          <li>
+          <li className="projectsLI">
             <NavLink to="/projects/resale">Resale</NavLink>
           </li>
-          <li>
+          <li className="projectsLI">
             <NavLink to="/projects/otto-daily">Otto Daily</NavLink>
           </li>
         </ul>

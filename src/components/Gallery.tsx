@@ -22,7 +22,6 @@ export function Gallery({ category, alt, title, titleWidth, photos }: Props) {
     restDelta: 0.001,
   });
   const isPresent = useIsPresent();
-
   return (
     <>
       <style>{`

@@ -193,14 +193,14 @@ img {
         <h1
           style={
             {
-              "--base-width": "24vw",
-              top: "-18vw",
+              "--base-width": "14vw",
+              top: "-12vw",
               letterSpacing: "-1.4vw",
               x: "-50%",
             } as any
           }
         >
-          Projects
+          Commissions
         </h1>
         <ul className="projectList">
           <li>

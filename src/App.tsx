@@ -94,7 +94,7 @@ function App() {
             <Route path="/about-me" element={<AboutMe />} />
             <Route path="/projects" element={<Projects />} />
             <Route
-              path="/projects/mo_advert_mo_power"
+              path="/projects/mo-advert-mo-power"
               element={
                 <AnimatePresence mode="wait">
                   <Gallery

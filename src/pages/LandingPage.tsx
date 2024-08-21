@@ -41,7 +41,7 @@ function LandingPage() {
           margin: 0;
           color: var(--accent);
           left: calc(50% + 130px);
-          font-size: 56px;
+          font-size: 100px;
           font-weight: 700;
           letter-spacing: -3px;
           line-height: 1.2;
@@ -86,13 +86,27 @@ function LandingPage() {
           background: var(--accent);
           bottom: 100px;
         }
-      `}</style>
 
+        @media (max-width: 768px) {
+          h2 {
+            font-size: 50px;
+            left: calc(50% + 20px);
+          }
+
+          section > div {
+            margin: 10px;
+          }
+
+          img {
+            object-fit: cover;
+          }
+        }
+      `}</style>
       <div>
         {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((image) => (
           <Image id={image} key={image} />
         ))}
-        <motion.div className="progress" style={{ scaleX }} />
+        {/* <motion.div className="progress" style={{ scaleX }} /> */}
       </div>
     </>
   );

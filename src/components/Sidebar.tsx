@@ -33,13 +33,13 @@ function SideBar() {
 
       {/* Sidebar */}
       <div
-        className={`fixed top-0 left-0 h-screen w-64 text-white p-8 flex flex-col justify-between z-40 mt-5 transform ${
-          isOpen ? "translate-x-0" : "-translate-x-full"
-        } transition-transform duration-300 ease-in-out md:translate-x-0 md:w-1/4`}
-      >
+  className={`fixed top-0 left-0 h-screen w-64 p-8 flex flex-col justify-between z-40 pt-20 transform ${
+    isOpen ? "translate-x-0" : "-translate-x-full"
+  } transition-transform duration-300 ease-in-out md:translate-x-0 md:w-1/4 bg-white text-black md:bg-black md:text-white`}
+>
         {/* Logo and Navigation */}
         <div>
-          <div className="text-5xl font-bold">
+          <div className="text-5xl font-bold hidden md:block">
             <NavLink
               to="/"
               className="hover:text-gray-400"

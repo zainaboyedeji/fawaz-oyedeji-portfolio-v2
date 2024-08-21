@@ -1,14 +1,6 @@
-import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 function AboutMe() {
-  useEffect(() => {
-    document.body.classList.toggle("overflow-hidden", false);
-    return () => {
-      document.body.classList.toggle("overflow-hidden", true);
-    };
-  }, []);
-
   return (
     <>
       <div className="flex flex-col md:flex-row justify-center items-center mt-10">

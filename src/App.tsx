@@ -10,9 +10,10 @@ import { Gallery } from "./components/Gallery";
 import { AnimatePresence } from "framer-motion";
 import {
   awakeningPhotosMetadata,
+  gfhPhotosMetadata,
   hiddenflowsPhotosMetadata,
   mampPhotosMetadata,
-  ncsPhotosMetadata,
+  ncsiPhotosMetadata,
   nppPhotosMetadata,
   ottodailyPhotosMetadata,
   resalePhotosMetadata,
@@ -37,7 +38,7 @@ function App() {
               element={
                 <AnimatePresence mode="wait">
                   <Gallery
-                    photos={ncsPhotosMetadata}
+                    photos={gfhPhotosMetadata}
                     title="Gun For Hire"
                     titleWidth={8}
                     category="gfh"
@@ -52,10 +53,10 @@ function App() {
               element={
                 <AnimatePresence mode="wait">
                   <Gallery
-                    photos={ncsPhotosMetadata}
+                    photos={ncsiPhotosMetadata}
                     title="New Culture Studios Ibadan"
                     titleWidth={8}
-                    category="ncs"
+                    category="ncsi"
                     alt="New Culture Studios Ibadan"
                   />
                 </AnimatePresence>

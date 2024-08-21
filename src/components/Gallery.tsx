@@ -1,4 +1,4 @@
-import { motion, useIsPresent, useScroll, useSpring } from "framer-motion";
+import { motion, useIsPresent } from "framer-motion";
 import { Image } from "./Image";
 import { Link } from "react-router-dom";
 

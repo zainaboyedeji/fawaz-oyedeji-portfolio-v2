@@ -2,7 +2,6 @@ import { useRef } from "react";
 import {
   motion,
   useScroll,
-  useSpring,
   useTransform,
   MotionValue,
 } from "framer-motion";

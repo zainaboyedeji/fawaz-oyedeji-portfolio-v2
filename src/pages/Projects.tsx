@@ -74,13 +74,6 @@ code {
   font-style: normal;
 }
 
-#progress {
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  transform: rotate(-90deg);
-}
-
 circle {
   stroke-dashoffset: 0;
   stroke-width: 15%;
@@ -180,7 +173,7 @@ img {
 }
       `}</style>
       <article>
-      <h1 className="text-center text-8xl font-bold mt-10">
+      <h1 className="text-center text-8xl font-bold mt-24">
           Projects
         </h1>
         <ul className="projectUL mt-5">

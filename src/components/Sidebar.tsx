@@ -38,7 +38,7 @@ function SideBar() {
   } transition-transform duration-300 ease-in-out md:translate-x-0 md:w-1/4 bg-white text-black md:bg-black md:text-white`}
 >
         {/* Logo and Navigation */}
-        <div>
+        <div className="mt-5">
           <div className="text-5xl font-bold hidden md:block">
             <NavLink
               to="/"

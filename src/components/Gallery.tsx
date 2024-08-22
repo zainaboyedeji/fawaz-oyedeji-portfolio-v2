@@ -105,14 +105,12 @@ section > div {
   position: relative;
   max-height: 90vh;
   margin: 20px;
-  background: var(--white);
   overflow: hidden;
-  background: var(--ash-black);
 }
 
 img {
   position: absolute;
-  top: 0;
+  top: 0px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -161,7 +159,7 @@ img {
 
       `}</style>
       <article>
-        <h1 className="text-center text-8xl font-bold">{title}</h1>
+        <h1 className="text-center text-8xl font-bold mt-28">{title}</h1>
         {photos.map(({ aspectRatio }, index) => (
           <Image
             category={category}
@@ -171,9 +169,9 @@ img {
           />
         ))}
         {/* <motion.div className="progress" style={{ scaleX }} /> */}
-        <footer className="back">
+        <div className="mb-20">
           <Link to="/">Back to galleries</Link>
-        </footer>
+        </div>
         <motion.div
           initial={{ scaleX: 1 }}
           animate={{

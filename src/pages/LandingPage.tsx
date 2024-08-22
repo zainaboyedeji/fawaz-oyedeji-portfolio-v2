@@ -56,13 +56,12 @@ function LandingPage() {
           position: relative;
           max-height: 90vh;
           margin: 20px;
-          background: var(--white);
           overflow: hidden;
         }
 
         img {
           position: absolute;
-          top: 0;
+          top: 50px;
           left: 0;
           right: 0;
           bottom: 0;

@@ -84,7 +84,7 @@ function useMenuAnimation(isOpen: boolean) {
       //@ts-ignore
       ...menuAnimations,
     ]);
-  }, [isOpen]);
+  }, [isOpen,animate]);
 
   return scope;
 }

@@ -1,4 +1,4 @@
-import { motion, useIsPresent } from "framer-motion";
+import { motion, useIsPresent, useScroll, useSpring } from "framer-motion";
 import { Image } from "./Image";
 import { Link } from "react-router-dom";
 
@@ -15,8 +15,13 @@ interface Props {
 }
 
 export function Gallery({ category, alt, title, titleWidth, photos }: Props) {
-  const isPresent = useIsPresent();
-  return (
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001
+  });
+  const isPresent = useIsPresent();  return (
     <>
       <style>{`
 
@@ -158,7 +163,7 @@ img {
             aspectRatio={aspectRatio}
           />
         ))}
-        {/* <motion.div className="progress" style={{ scaleX }} /> */}
+        <motion.div className="progress" style={{ scaleX }} />
         <div className="mb-20">
           <Link to="/">Back to galleries</Link>
         </div>

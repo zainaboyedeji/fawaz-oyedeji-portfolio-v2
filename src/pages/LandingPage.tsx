@@ -4,7 +4,8 @@ import {
   useScroll,
   useTransform,
   MotionValue,
-  useIsPresent
+  useIsPresent,
+  useSpring,
 } from "framer-motion";
 
 function useParallax(value: MotionValue<number>, distance: number) {
@@ -28,6 +29,13 @@ function Image({ id }: { id: number }) {
 
 function LandingPage() {
   const isPresent = useIsPresent();
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001,
+  });
+
   return (
     <>
       <style>{`
@@ -99,18 +107,18 @@ function LandingPage() {
         {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((image) => (
           <Image id={image} key={image} />
         ))}
-        {/* <motion.div className="progress" style={{ scaleX }} /> */}
+        <motion.div className="progress" style={{ scaleX }} />
       </div>
       <motion.div
-     initial={{ scaleX: 1 }}
-     animate={{
-       scaleX: 0,
-       transition: { duration: 0.5, ease: "circOut" },
-     }}
-     exit={{ scaleX: 1, transition: { duration: 0.5, ease: "circIn" } }}
-     style={{ originX: isPresent ? 0 : 1 }}
-     className="privacy-screen"
-   />
+        initial={{ scaleX: 1 }}
+        animate={{
+          scaleX: 0,
+          transition: { duration: 0.5, ease: "circOut" },
+        }}
+        exit={{ scaleX: 1, transition: { duration: 0.5, ease: "circIn" } }}
+        style={{ originX: isPresent ? 0 : 1 }}
+        className="privacy-screen"
+      />
     </>
   );
 }

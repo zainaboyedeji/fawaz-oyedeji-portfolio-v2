@@ -1,6 +1,6 @@
-import { Routes, Route } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SideBar from "./components/Sidebar";
-import { BrowserRouter } from "react-router-dom";
 import LandingPage from "./pages/LandingPage";
 import Projects from "./pages/Projects";
 import Commissions from "./pages/Commissions";
@@ -8,6 +8,9 @@ import ContactMe from "./pages/ContactMe";
 import AboutMe from "./pages/AboutMe";
 import { Gallery } from "./components/Gallery";
 import { AnimatePresence } from "framer-motion";
+import ScrollToTop from "./components/ScrollToTop";
+import LoadingSpinner from "./components/LoadingSpinner";
+import CVPage from "./pages/CVPage";
 import {
   awakeningPhotosMetadata,
   gfhPhotosMetadata,
@@ -19,10 +22,23 @@ import {
   resalePhotosMetadata,
   yoursinarmsPhotosMetadata,
 } from "./data";
-import CVPage from "./pages/CVPage";
-import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate an async task like fetching data
+    const timer = setTimeout(() => {
+      setLoading(false); // Set loading to false when done
+    }, 2000); // Adjust time based on how long you want to show the spinner
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return <LoadingSpinner />;
+  }
+
   return (
     <BrowserRouter>
       <div className="flex flex-col md:flex-row w-full h-screen">
@@ -30,7 +46,7 @@ function App() {
           <SideBar />
         </div>
         <div className="w-full md:w-3/4">
-        <ScrollToTop />
+          <ScrollToTop />
           <Routes>
             <Route path="/" element={<LandingPage />} />
             <Route path="/home" element={<LandingPage />} />
@@ -49,7 +65,6 @@ function App() {
                 </AnimatePresence>
               }
             />
-
             <Route
               path="/commissions/new-culture-studios-ibadan"
               element={
@@ -64,7 +79,6 @@ function App() {
                 </AnimatePresence>
               }
             />
-
             <Route
               path="/commissions/nigerian-policing-programme"
               element={
@@ -125,7 +139,6 @@ function App() {
                 </AnimatePresence>
               }
             />
-
             <Route
               path="/projects/yours-in-arms"
               element={
@@ -154,7 +167,6 @@ function App() {
                 </AnimatePresence>
               }
             />
-
             <Route
               path="/projects/otto-daily"
               element={

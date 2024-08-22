@@ -1,7 +1,10 @@
+import { motion, useIsPresent } from "framer-motion";
+
 function ContactMe() {
+  const isPresent = useIsPresent();
   return (
     <>
-      <div className="border-b-2 border-gray-400 my-6"></div>
+    <div className="mt-24">
       <div className="py-4 md:py-9 px-4">
         <p className="text-center text-sm md:text-base">
           For inquiries regarding availability for commissions, image licensing, and print purchase, please contact.
@@ -28,7 +31,18 @@ function ContactMe() {
           telephone: +234-90-93173219
         </p>
       </div>
-    </>
+    </div>
+     <motion.div
+     initial={{ scaleX: 1 }}
+     animate={{
+       scaleX: 0,
+       transition: { duration: 0.5, ease: "circOut" },
+     }}
+     exit={{ scaleX: 1, transition: { duration: 0.5, ease: "circIn" } }}
+     style={{ originX: isPresent ? 0 : 1 }}
+     className="privacy-screen"
+   />
+   </>
   );
 }
 

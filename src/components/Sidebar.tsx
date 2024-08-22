@@ -26,7 +26,7 @@ function SideBar() {
             FAWAZ <br /> OYEDEJI.
           </NavLink>
         </div>
-        <button className="text-white" onClick={toggleSidebar}>
+        <button className="text-white cursor-pointer" onClick={toggleSidebar}>
           {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
         </button>
       </div>
@@ -38,7 +38,7 @@ function SideBar() {
   } transition-transform duration-300 ease-in-out md:translate-x-0 md:w-1/4 bg-white text-black md:bg-black md:text-white`}
 >
         {/* Logo and Navigation */}
-        <div className="mt-5">
+        <div className="">
           <div className="text-5xl font-bold hidden md:block">
             <NavLink
               to="/"

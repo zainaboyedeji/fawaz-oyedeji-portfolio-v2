@@ -161,16 +161,6 @@ img {
   justify-content: center;
   align-self: center;
 }
-
-.privacy-screen {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: var(--accent);
-  z-index: 2;
-}
       `}</style>
       <article>
       <h1 className="text-center text-8xl font-bold mt-24">

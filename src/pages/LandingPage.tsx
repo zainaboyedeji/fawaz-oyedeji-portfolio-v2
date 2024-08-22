@@ -4,6 +4,7 @@ import {
   useScroll,
   useTransform,
   MotionValue,
+  useIsPresent
 } from "framer-motion";
 
 function useParallax(value: MotionValue<number>, distance: number) {
@@ -26,6 +27,7 @@ function Image({ id }: { id: number }) {
 }
 
 function LandingPage() {
+  const isPresent = useIsPresent();
   return (
     <>
       <style>{`
@@ -99,6 +101,16 @@ function LandingPage() {
         ))}
         {/* <motion.div className="progress" style={{ scaleX }} /> */}
       </div>
+      <motion.div
+     initial={{ scaleX: 1 }}
+     animate={{
+       scaleX: 0,
+       transition: { duration: 0.5, ease: "circOut" },
+     }}
+     exit={{ scaleX: 1, transition: { duration: 0.5, ease: "circIn" } }}
+     style={{ originX: isPresent ? 0 : 1 }}
+     className="privacy-screen"
+   />
     </>
   );
 }

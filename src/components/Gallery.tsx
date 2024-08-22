@@ -133,16 +133,6 @@ img {
   justify-content: center;
   align-self: center;
 }
-
-.privacy-screen {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: var(--accent);
-  z-index: 2;
-}
   @media (max-width: 768px) {
           h2 {
             font-size: 50px;

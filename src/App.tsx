@@ -20,6 +20,7 @@ import {
   yoursinarmsPhotosMetadata,
 } from "./data";
 import CVPage from "./pages/CVPage";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <SideBar />
         </div>
         <div className="w-full md:w-3/4">
+        <ScrollToTop />
           <Routes>
             <Route path="/" element={<LandingPage />} />
             <Route path="/home" element={<LandingPage />} />
@@ -77,7 +79,6 @@ function App() {
                 </AnimatePresence>
               }
             />
-
             <Route
               path="/commissions/hidden-flows"
               element={

@@ -1,9 +1,12 @@
 import { Link } from "react-router-dom";
+import { motion, useIsPresent } from "framer-motion";
 
 function AboutMe() {
+  const isPresent = useIsPresent();
+
   return (
     <>
-      <div className="flex flex-col md:flex-row justify-center items-center mt-10">
+      <div className="flex flex-col md:flex-row justify-center items-center overflow-hidden mt-20">
         <div className="w-full md:w-2/5 text-center mb-5 md:mb-0 flex justify-center">
           <img
             src="/fawaz-oyedeji.jpg"
@@ -11,7 +14,7 @@ function AboutMe() {
             className="w-48 h-48 sm:w-60 sm:h-60 md:w-[18rem] md:h-[18rem] rounded-full"
           />
         </div>
-        <div className="w-full md:w-3/5  flex flex-col justify-center text-sm md:text-base">
+        <div className="w-full md:w-3/5 flex flex-col justify-center text-sm md:text-base">
           <p className="mb-5">
             Fawaz Oyedeji is a documentary photographer and historian based in
             Lagos, Nigeria. He holds a background in Mass Communication from
@@ -54,6 +57,16 @@ function AboutMe() {
           </p>
         </div>
       </div>
+      <motion.div
+          initial={{ scaleX: 1 }}
+          animate={{
+            scaleX: 0,
+            transition: { duration: 0.5, ease: "circOut" },
+          }}
+          exit={{ scaleX: 1, transition: { duration: 0.5, ease: "circIn" } }}
+          style={{ originX: isPresent ? 0 : 1 }}
+          className="privacy-screen"
+        />
     </>
   );
 }

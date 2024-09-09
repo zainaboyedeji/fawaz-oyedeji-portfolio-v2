@@ -84,7 +84,7 @@ function useMenuAnimation(isOpen: boolean) {
       //@ts-ignore
       ...menuAnimations,
     ]);
-  }, [isOpen,animate]);
+  }, [isOpen, animate]);
 
   return scope;
 }
@@ -106,7 +106,9 @@ function SideBar() {
           <li className="mobileLi">
             <NavLink
               to="/projects"
-              className="hover:text-gray-400"
+              className={({ isActive }) =>
+                isActive ? "!text-stone-600" : "hover:text-gray-400"
+              }
               onClick={() => setIsOpen(!isOpen)}
             >
               projects
@@ -115,7 +117,9 @@ function SideBar() {
           <li className="mobileLi">
             <NavLink
               to="/commissions"
-              className="hover:text-gray-400"
+              className={({ isActive }) =>
+                isActive ? "!text-stone-600" : "hover:text-gray-400"
+              }
               onClick={() => setIsOpen(!isOpen)}
             >
               commissions
@@ -124,7 +128,9 @@ function SideBar() {
           <li className="mobileLi">
             <NavLink
               to="/about-me"
-              className="hover:text-gray-400"
+              className={({ isActive }) =>
+                isActive ? "!text-stone-600" : "hover:text-gray-400"
+              }
               onClick={() => setIsOpen(!isOpen)}
             >
               about
@@ -133,7 +139,9 @@ function SideBar() {
           <li className="mobileLi">
             <NavLink
               to="/contact-me"
-              className="hover:text-gray-400"
+              className={({ isActive }) =>
+                isActive ? "!text-stone-600" : "hover:text-gray-400"
+              }
               onClick={() => setIsOpen(!isOpen)}
             >
               contact
@@ -228,7 +236,9 @@ function SideBar() {
                 <li>
                   <NavLink
                     to="/"
-                    className="hover:text-gray-400"
+                    className={({ isActive }) =>
+                      isActive ? "!text-stone-600" : "hover:text-gray-400"
+                    }
                     onClick={() => setIsOpen(!isOpen)}
                   >
                     home
@@ -237,7 +247,9 @@ function SideBar() {
                 <li>
                   <NavLink
                     to="/projects"
-                    className="hover:text-gray-400"
+                    className={({ isActive }) =>
+                      isActive ? "!text-stone-600" : "hover:text-gray-400"
+                    }
                     onClick={() => setIsOpen(!isOpen)}
                   >
                     projects
@@ -246,7 +258,9 @@ function SideBar() {
                 <li>
                   <NavLink
                     to="/commissions"
-                    className="hover:text-gray-400"
+                    className={({ isActive }) =>
+                      isActive ? "!text-stone-600" : "hover:text-gray-400"
+                    }
                     onClick={() => setIsOpen(!isOpen)}
                   >
                     commissions
@@ -255,7 +269,9 @@ function SideBar() {
                 <li>
                   <NavLink
                     to="/about-me"
-                    className="hover:text-gray-400"
+                    className={({ isActive }) =>
+                      isActive ? "!text-stone-600" : "hover:text-gray-400"
+                    }
                     onClick={() => setIsOpen(!isOpen)}
                   >
                     about
@@ -264,7 +280,9 @@ function SideBar() {
                 <li>
                   <NavLink
                     to="/contact-me"
-                    className="hover:text-gray-400"
+                    className={({ isActive }) =>
+                      isActive ? "!text-stone-600" : "hover:text-gray-400"
+                    }
                     onClick={() => setIsOpen(!isOpen)}
                   >
                     contact

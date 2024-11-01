@@ -197,7 +197,7 @@ function Commissions() {
           }
       `}</style>
       <article>
-      <h1 className="text-center text-5xl font-bold mt-24 lg:text-8xl sm:mt-16">
+        <h1 className="text-center text-5xl font-bold mt-24 lg:text-8xl sm:mt-16">
           Projects
         </h1>
         <ul className="projectUL mt-5">

@@ -1,22 +1,19 @@
 import { motion, useIsPresent } from "framer-motion";
 
-function ContactMe() {
+function Multimedia() {
   const isPresent = useIsPresent();
   return (
     <>
       <div className="mt-24">
-      <p className="text-center">
-          Use the form or email to enquire about rates and availability, or you
-          can just email me to say hi.
-        </p>
-
-        <div className="flex">
-          <div>ee</div>
-          <div>ee</div>
-
-          </div>
-
-
+        <div className="flex h-[60vh]">
+          <iframe
+            title="vimeo video"
+            src="https://player.vimeo.com/video/1019928845"
+            className="w-full"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </div>
       </div>
       <motion.div
         initial={{ scaleX: 1 }}
@@ -32,4 +29,4 @@ function ContactMe() {
   );
 }
 
-export default ContactMe;
+export default Multimedia;

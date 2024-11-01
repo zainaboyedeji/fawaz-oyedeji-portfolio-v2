@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import SideBar from "./components/Sidebar";
-import LandingPage from "./pages/LandingPage";
-import Projects from "./pages/Projects";
-import Commissions from "./pages/Commissions";
-import ContactMe from "./pages/ContactMe";
-import AboutMe from "./pages/AboutMe";
-import { Gallery } from "./components/Gallery";
+import SideBar from "./components/sidebar";
+import LandingPage from "./pages/landing-page";
+import Projects from "./pages/projects";
+import Commissions from "./pages/commissions";
+import ContactMe from "./pages/contact-me";
+import AboutMe from "./pages/about-me";
+import { Gallery } from "./components/gallery";
 import { AnimatePresence } from "framer-motion";
-import ScrollToTop from "./components/ScrollToTop";
-import LoadingSpinner from "./components/LoadingSpinner";
-import CVPage from "./pages/CVPage";
+import ScrollToTop from "./components/scroll-to-top";
+import LoadingSpinner from "./components/loading-spinner";
+import CVPage from "./pages/cv-page";
 import {
   awakeningPhotosMetadata,
   gfhPhotosMetadata,

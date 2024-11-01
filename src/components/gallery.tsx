@@ -1,5 +1,5 @@
 import { motion, useIsPresent, useScroll, useSpring } from "framer-motion";
-import { Image } from "./Image";
+import { Image } from "./image";
 import { Link } from "react-router-dom";
 
 export interface PhotoMetadata {

@@ -1,4 +1,4 @@
-import { PhotoMetadata } from "./components/Gallery";
+import { PhotoMetadata } from "./components/gallery";
 
 const horizontal = "3/2";
 

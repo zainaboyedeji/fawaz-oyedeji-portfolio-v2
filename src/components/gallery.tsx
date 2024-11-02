@@ -24,10 +24,6 @@ export function Gallery({ category, alt, title, titleWidth, photos }: Props) {
   });
   const isPresent = useIsPresent();
 
-  useEffect(() => {
-    // Scroll to the top when the component mounts
-    window.scrollTo(0, 0);
-  }, []);
 
   return (
     <>
@@ -104,7 +100,7 @@ export function Gallery({ category, alt, title, titleWidth, photos }: Props) {
           justify-content: center;
           align-items: center;
           position: relative;
-          scroll-snap-align: center;
+          // scroll-snap-align: center;
           perspective: 500px;
         }
 
@@ -134,6 +130,8 @@ export function Gallery({ category, alt, title, titleWidth, photos }: Props) {
           height: 5px;
           background: var(--accent);
           bottom: 100px;
+          margin-right:9rem;
+          margin-left:28rem;
         }
 
         .back {
@@ -159,7 +157,7 @@ export function Gallery({ category, alt, title, titleWidth, photos }: Props) {
         }
       `}</style>
       <article style={{ paddingTop: "80px" }}>
-        <h1 className="text-center text-8xl font-bold mt-40">{title}</h1>
+        <h1 className="text-center text-8xl font-bold">{title}</h1>
         {photos.map(({ aspectRatio }, index) => (
           <Image
             category={category}

@@ -98,11 +98,11 @@ function ContactMe() {
                 ></textarea>
               </div>
 
-              <div
+              <button
                 className="flex justify-center w-2/5 px-4 py-2 bg-white text-black rounded-md hover:bg-white hover:text-black focus:outline-none"
               >
                 Send Message
-              </div>
+              </button>
             </form>
             {formStatus && <p className="mt-4 text-center">{formStatus}</p>}
           </div>

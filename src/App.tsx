@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SideBar from "./components/sidebar";
-import LandingPage from "./pages/landing-page";
 import Projects from "./pages/projects";
 import Commissions from "./pages/commissions";
 import ContactMe from "./pages/contact-me";
@@ -15,22 +14,25 @@ import {
   awakeningPhotosMetadata,
   gfhPhotosMetadata,
   hiddenflowsPhotosMetadata,
+  homePhotosMetadata,
   mampPhotosMetadata,
   ncsiPhotosMetadata,
   nppPhotosMetadata,
   ottodailyPhotosMetadata,
   resalePhotosMetadata,
+  tearSheetPhotosMetadata,
   yoursinarmsPhotosMetadata,
 } from "./data";
+import TearSheet from "./pages/tearsheet";
+import Multimedia from "./pages/multimedia";
 
 function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate an async task like fetching data
     const timer = setTimeout(() => {
-      setLoading(false); // Set loading to false when done
-    }, 2000); // Adjust time based on how long you want to show the spinner
+      setLoading(false);
+    }, 2000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -48,9 +50,44 @@ function App() {
         <div className="w-full md:w-3/4">
           <ScrollToTop />
           <Routes>
-            <Route path="/" element={<LandingPage />} />
-            <Route path="/home" element={<LandingPage />} />
+            <Route
+              path="/"
+              element={
+                <AnimatePresence mode="wait">
+                  <Gallery
+                    photos={homePhotosMetadata}
+                    category="home"
+                    alt="home"
+                  />
+                </AnimatePresence>
+              }
+            />
+            <Route
+              path="/home"
+              element={
+                <AnimatePresence mode="wait">
+                  <Gallery
+                    photos={homePhotosMetadata}
+                    category="home"
+                    alt="Home"
+                  />
+                </AnimatePresence>
+              }
+            />
             <Route path="/commissions" element={<Commissions />} />
+            <Route
+              path="/tearsheet"
+              element={
+                <AnimatePresence mode="wait">
+                  <Gallery
+                    photos={tearSheetPhotosMetadata}
+                    category="ts"
+                    alt="Tear Sheet"
+                  />
+                </AnimatePresence>
+              }
+            />{" "}
+            <Route path="/multimedia" element={<Multimedia />} />
             <Route
               path="/commissions/gun-for-hire"
               element={

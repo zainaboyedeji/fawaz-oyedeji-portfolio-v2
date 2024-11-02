@@ -1,8 +1,6 @@
 import { IoMdArrowRoundBack } from "react-icons/io";
 import { motion, useIsPresent, useScroll, useSpring } from "framer-motion";
 import { Image } from "./image";
-import { Link } from "react-router-dom";
-import { useNavigate } from 'react-router-dom';
 
 export interface PhotoMetadata {
   aspectRatio: string;
@@ -11,8 +9,8 @@ export interface PhotoMetadata {
 interface Props {
   alt: string;
   category: string;
-  title: string;
-  titleWidth: number;
+  title?: string;
+  titleWidth?: number;
   photos: PhotoMetadata[];
 }
 
@@ -25,11 +23,9 @@ export function Gallery({ category, alt, title, titleWidth, photos }: Props) {
   });
   const isPresent = useIsPresent();
 
-  const navigate = useNavigate();
-
   const handleGoBack = () => {
-    navigate(-1); // Navigate back to the previous page
-  };
+    window.history.back(); 
+};
 
   return (
     <>
@@ -136,7 +132,7 @@ export function Gallery({ category, alt, title, titleWidth, photos }: Props) {
           height: 5px;
           background: var(--accent);
           bottom: 100px;
-          margin-right:9rem;
+          margin-right:8rem;
           margin-left:28rem;
         }
 
@@ -162,7 +158,7 @@ export function Gallery({ category, alt, title, titleWidth, photos }: Props) {
           }
         }
       `}</style>
-      <article style={{ paddingTop: "80px" }}>
+      <article>
         <h1 className="text-center text-8xl font-bold">{title}</h1>
         {photos.map(({ aspectRatio }, index) => (
           <Image
@@ -176,9 +172,9 @@ export function Gallery({ category, alt, title, titleWidth, photos }: Props) {
         <motion.div className="progress" style={{ scaleX }} />
         <div className="mb-20 flex justify-center" onClick={handleGoBack}>
           <IoMdArrowRoundBack style={{ width: "5rem", height: "2rem" }} />
-          <Link to="/" className="font-bold text-2xl">
+          <div onClick={handleGoBack} className="font-bold text-2xl">
             Back To Galleries
-          </Link>
+          </div>
         </div>
         <motion.div
           initial={{ scaleX: 1 }}

@@ -1,5 +1,6 @@
 import { PhotoMetadata } from "./components/gallery";
 
+const vertical = "5/6";
 const horizontal = "3/2";
 
 export const mampPhotosMetadata: PhotoMetadata[] = [
@@ -92,10 +93,33 @@ export const hiddenflowsPhotosMetadata: PhotoMetadata[] = [
   { aspectRatio: horizontal },
   { aspectRatio: horizontal },
   { aspectRatio: horizontal },
-  { aspectRatio: horizontal }
+  { aspectRatio: horizontal },
 ];
 
 export const gfhPhotosMetadata: PhotoMetadata[] = [
+  { aspectRatio: horizontal },
+  { aspectRatio: horizontal },
+];
+
+export const homePhotosMetadata: PhotoMetadata[] = [
+  { aspectRatio: horizontal },
+  { aspectRatio: horizontal },
+  { aspectRatio: horizontal },
+  { aspectRatio: horizontal },
+  { aspectRatio: horizontal },
+  { aspectRatio: horizontal },
+  { aspectRatio: horizontal },
+  { aspectRatio: horizontal },
+  { aspectRatio: horizontal },
+  { aspectRatio: horizontal },
+  { aspectRatio: horizontal },
+  { aspectRatio: horizontal },
+];
+
+export const tearSheetPhotosMetadata: PhotoMetadata[] = [
+  { aspectRatio: vertical },
+  { aspectRatio: horizontal },
+  { aspectRatio: horizontal },
   { aspectRatio: horizontal },
   { aspectRatio: horizontal },
 ];

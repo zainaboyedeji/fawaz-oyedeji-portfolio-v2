@@ -20,7 +20,7 @@ const Path = (props: any) => (
 );
 
 export const MenuToggle = ({ toggle }: any) => (
-  <button onClick={toggle} className="md:hidden">
+  <button onClick={toggle} className="md:hidden menuButton">
     <svg width="23" height="18" viewBox="0 0 23 18">
       <Path
         d="M 2 2.5 L 20 2.5"
@@ -99,7 +99,13 @@ function SideBar() {
       <nav className="menu">
         <ul className="mobileUl">
           <li className="mobileLi">
-            <NavLink to="/" onClick={() => setIsOpen(!isOpen)}>
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                isActive ? "!text-stone-600" : "hover:text-gray-400"
+              }
+              onClick={() => setIsOpen(!isOpen)}
+            >
               home
             </NavLink>
           </li>
@@ -123,6 +129,28 @@ function SideBar() {
               onClick={() => setIsOpen(!isOpen)}
             >
               commissions
+            </NavLink>
+          </li>
+          <li className="mobileLi">
+            <NavLink
+              to="/tearsheet"
+              className={({ isActive }) =>
+                isActive ? "!text-stone-600" : "hover:text-gray-400"
+              }
+              onClick={() => setIsOpen(!isOpen)}
+            >
+              tearsheet{" "}
+            </NavLink>
+          </li>
+          <li className="mobileLi">
+            <NavLink
+              to="/multimedia"
+              className={({ isActive }) =>
+                isActive ? "!text-stone-600" : "hover:text-gray-400"
+              }
+              onClick={() => setIsOpen(!isOpen)}
+            >
+              multimedia
             </NavLink>
           </li>
           <li className="mobileLi">
@@ -184,7 +212,7 @@ function SideBar() {
           will-change: transform, opacity, filter;
         }
 
-        button {
+        .menuButton {
           outline: none;
           border: none;
           -webkit-user-select: none;
@@ -264,6 +292,28 @@ function SideBar() {
                     onClick={() => setIsOpen(!isOpen)}
                   >
                     commissions
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    to="/tearsheet"
+                    className={({ isActive }) =>
+                      isActive ? "!text-stone-600" : "hover:text-gray-400"
+                    }
+                    onClick={() => setIsOpen(!isOpen)}
+                  >
+                    tearsheet
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    to="/multimedia"
+                    className={({ isActive }) =>
+                      isActive ? "!text-stone-600" : "hover:text-gray-400"
+                    }
+                    onClick={() => setIsOpen(!isOpen)}
+                  >
+                    multimedia
                   </NavLink>
                 </li>
                 <li>

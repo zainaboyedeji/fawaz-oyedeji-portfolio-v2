@@ -86,6 +86,8 @@ function LandingPage() {
           height: 5px;
           background: var(--accent);
           bottom: 100px;
+          margin-left:21rem;
+          margin-right:2rem;
         }
 
         @media (max-width: 768px) {

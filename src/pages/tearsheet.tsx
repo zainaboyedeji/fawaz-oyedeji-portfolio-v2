@@ -22,7 +22,6 @@ function Image({ id }: { id: number }) {
       <div ref={ref}>
         <img src={`/${id}.jpg`} alt={`#00${id}`} />
       </div>
-      <motion.h2 style={{ y }}>{`#0${id}`}</motion.h2>
     </section>
   );
 }
@@ -39,15 +38,13 @@ function TearSheet() {
   return (
     <>
       <style>{`
-        h2 {
+        h6 {
           margin: 0;
           color: var(--accent);
-          left: calc(50% + 130px);
           font-size: 100px;
           font-weight: 700;
           letter-spacing: -3px;
           line-height: 1.2;
-          position: absolute;
         }
 
         section {
@@ -56,7 +53,7 @@ function TearSheet() {
           justify-content: center;
           align-items: center;
           position: relative;
-          scroll-snap-align: center;
+          // scroll-snap-align: center;
           perspective: 500px;
         }
 
@@ -86,6 +83,8 @@ function TearSheet() {
           height: 5px;
           background: var(--accent);
           bottom: 100px;
+          margin-right:4rem;
+          margin-left:21rem;
         }
 
         @media (max-width: 768px) {
@@ -103,7 +102,13 @@ function TearSheet() {
           }
         }
       `}</style>
-      <div>
+    <>
+    
+    <h6 className="text-center">Press news, articles, and <br/> client’s work.
+
+</h6>
+    
+    <div>
         {[13,14,15,16].map((image) => (
           <Image id={image} key={image} />
         ))}
@@ -118,7 +123,7 @@ function TearSheet() {
         exit={{ scaleX: 1, transition: { duration: 0.5, ease: "circIn" } }}
         style={{ originX: isPresent ? 0 : 1 }}
         className="privacy-screen"
-      />
+      /></>
     </>
   );
 }

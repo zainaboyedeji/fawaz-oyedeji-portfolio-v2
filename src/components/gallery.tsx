@@ -9,8 +9,8 @@ export interface PhotoMetadata {
 interface Props {
   alt: string;
   category: string;
-  title: string;
-  titleWidth: number;
+  title?: string;
+  titleWidth?: number;
   photos: PhotoMetadata[];
 }
 
@@ -132,7 +132,7 @@ export function Gallery({ category, alt, title, titleWidth, photos }: Props) {
           height: 5px;
           background: var(--accent);
           bottom: 100px;
-          margin-right:9rem;
+          margin-right:8rem;
           margin-left:28rem;
         }
 
@@ -158,7 +158,7 @@ export function Gallery({ category, alt, title, titleWidth, photos }: Props) {
           }
         }
       `}</style>
-      <article style={{ paddingTop: "80px" }}>
+      <article>
         <h1 className="text-center text-8xl font-bold">{title}</h1>
         {photos.map(({ aspectRatio }, index) => (
           <Image

@@ -27,9 +27,11 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    // Simulate an async task like fetching data
     const timer = setTimeout(() => {
-      setLoading(false); 
-    }, 2000);
+      setLoading(false); // Set loading to false when done
+    }, 2000); // Adjust time based on how long you want to show the spinner
+
     return () => clearTimeout(timer);
   }, []);
 

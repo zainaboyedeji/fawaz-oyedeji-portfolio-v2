@@ -1,8 +1,17 @@
+import { useEffect } from "react";
 import { motion, useIsPresent } from "framer-motion";
 import { NavLink } from "react-router-dom";
 
 function Commissions() {
   const isPresent = useIsPresent();
+
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+        return () => {
+      document.body.style.overflow = "";
+    };
+  }, []);
+
   return (
     <>
       <style>{`
@@ -19,7 +28,7 @@ function Commissions() {
           margin-bottom: 1.6rem;
           text-decoration: underline;
         }
-
+        
         h1, h2, h3 {
           font-family: sofia-pro, sans-serif;
           font-weight: 600;

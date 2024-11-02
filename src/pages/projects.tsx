@@ -1,8 +1,15 @@
 import { motion, useIsPresent } from "framer-motion";
+import { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
 function Commissions() {
   const isPresent = useIsPresent();
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, []);
   return (
     <>
       <style>{`

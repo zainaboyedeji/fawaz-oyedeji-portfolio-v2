@@ -22,18 +22,14 @@ import {
   resalePhotosMetadata,
   yoursinarmsPhotosMetadata,
 } from "./data";
-import TearSheet from "./pages/tearsheet";
-import Multimedia from "./pages/multimedia";
 
 function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate an async task like fetching data
     const timer = setTimeout(() => {
-      setLoading(false); // Set loading to false when done
-    }, 2000); // Adjust time based on how long you want to show the spinner
-
+      setLoading(false); 
+    }, 2000);
     return () => clearTimeout(timer);
   }, []);
 
@@ -111,8 +107,6 @@ function App() {
             />
             <Route path="/my-cv" element={<CVPage />} />
             <Route path="/contact-me" element={<ContactMe />} />
-            <Route path="/tearsheet" element={<TearSheet />} />
-            <Route path="/multimedia" element={<Multimedia />} />
             <Route path="/about-me" element={<AboutMe />} />
             <Route path="/projects" element={<Projects />} />
             <Route

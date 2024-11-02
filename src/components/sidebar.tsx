@@ -139,7 +139,7 @@ function SideBar() {
               }
               onClick={() => setIsOpen(!isOpen)}
             >
-              tearsheet{" "}
+              tearsheet
             </NavLink>
           </li>
           <li className="mobileLi">

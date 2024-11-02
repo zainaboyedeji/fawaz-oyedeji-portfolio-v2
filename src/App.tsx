@@ -23,7 +23,6 @@ import {
   tearSheetPhotosMetadata,
   yoursinarmsPhotosMetadata,
 } from "./data";
-import TearSheet from "./pages/tearsheet";
 import Multimedia from "./pages/multimedia";
 
 function App() {

@@ -1,7 +1,8 @@
-import { useEffect } from "react";
+import { IoMdArrowRoundBack } from "react-icons/io";
 import { motion, useIsPresent, useScroll, useSpring } from "framer-motion";
 import { Image } from "./image";
 import { Link } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 
 export interface PhotoMetadata {
   aspectRatio: string;
@@ -20,10 +21,15 @@ export function Gallery({ category, alt, title, titleWidth, photos }: Props) {
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 100,
     damping: 30,
-    restDelta: 0.001
+    restDelta: 0.001,
   });
   const isPresent = useIsPresent();
 
+  const navigate = useNavigate();
+
+  const handleGoBack = () => {
+    navigate(-1); // Navigate back to the previous page
+  };
 
   return (
     <>
@@ -168,8 +174,11 @@ export function Gallery({ category, alt, title, titleWidth, photos }: Props) {
           />
         ))}
         <motion.div className="progress" style={{ scaleX }} />
-        <div className="mb-20">
-          <Link to="/">Back to galleries</Link>
+        <div className="mb-20 flex justify-center" onClick={handleGoBack}>
+          <IoMdArrowRoundBack style={{ width: "5rem", height: "2rem" }} />
+          <Link to="/" className="font-bold text-2xl">
+            Back To Galleries
+          </Link>
         </div>
         <motion.div
           initial={{ scaleX: 1 }}

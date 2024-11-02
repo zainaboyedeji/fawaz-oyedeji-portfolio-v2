@@ -22,6 +22,8 @@ import {
   resalePhotosMetadata,
   yoursinarmsPhotosMetadata,
 } from "./data";
+import TearSheet from "./pages/tearsheet";
+import Multimedia from "./pages/multimedia";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -51,6 +53,8 @@ function App() {
             <Route path="/" element={<LandingPage />} />
             <Route path="/home" element={<LandingPage />} />
             <Route path="/commissions" element={<Commissions />} />
+            <Route path="/tearsheet" element={<TearSheet />} />
+            <Route path="/multimedia" element={<Multimedia />} />
             <Route
               path="/commissions/gun-for-hire"
               element={

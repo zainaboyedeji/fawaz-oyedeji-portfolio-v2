@@ -103,7 +103,7 @@ function LandingPage() {
           }
         }
       `}</style>
-      <div>
+      <div className="bg-white">
         {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((image) => (
           <Image id={image} key={image} />
         ))}

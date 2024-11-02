@@ -20,7 +20,7 @@ const Path = (props: any) => (
 );
 
 export const MenuToggle = ({ toggle }: any) => (
-  <button onClick={toggle} className="md:hidden">
+  <button onClick={toggle} className="md:hidden menuButton">
     <svg width="23" height="18" viewBox="0 0 23 18">
       <Path
         d="M 2 2.5 L 20 2.5"
@@ -212,7 +212,7 @@ function SideBar() {
           will-change: transform, opacity, filter;
         }
 
-        button {
+        .menuButton {
           outline: none;
           border: none;
           -webkit-user-select: none;

@@ -33,7 +33,7 @@ function TearSheet() {
         h6 {
           margin: 0;
           color: var(--accent);
-          font-size: 100px;
+          font-size: 70px;
           font-weight: 700;
           letter-spacing: -3px;
           line-height: 1.2;

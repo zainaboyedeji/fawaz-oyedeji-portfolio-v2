@@ -84,7 +84,7 @@ function useMenuAnimation(isOpen: boolean) {
       //@ts-ignore
       ...menuAnimations,
     ]);
-  }, [isOpen,animate]);
+  }, [isOpen, animate]);
 
   return scope;
 }
@@ -99,20 +99,16 @@ function SideBar() {
       <nav className="menu">
         <ul className="mobileUl">
           <li className="mobileLi">
-          <NavLink
-              to="/"
-              className={({ isActive }) =>
-                isActive ? "!text-stone-600" : "hover:text-gray-400"
-              }
-              onClick={() => setIsOpen(!isOpen)}
-            >
+            <NavLink to="/" onClick={() => setIsOpen(!isOpen)}>
               home
             </NavLink>
           </li>
           <li className="mobileLi">
             <NavLink
               to="/projects"
-              className="hover:text-gray-400"
+              className={({ isActive }) =>
+                isActive ? "!text-stone-600" : "hover:text-gray-400"
+              }
               onClick={() => setIsOpen(!isOpen)}
             >
               projects
@@ -121,41 +117,20 @@ function SideBar() {
           <li className="mobileLi">
             <NavLink
               to="/commissions"
-              className="hover:text-gray-400"
+              className={({ isActive }) =>
+                isActive ? "!text-stone-600" : "hover:text-gray-400"
+              }
               onClick={() => setIsOpen(!isOpen)}
             >
               commissions
             </NavLink>
           </li>
-
-          <li className="mobileLi">
-            <NavLink
-              to="/tearsheet"
-              className={({ isActive }) =>
-                isActive ? "!text-stone-600" : "hover:text-gray-400"
-              }
-              onClick={() => setIsOpen(!isOpen)}
-            >
-              tearsheet
-            </NavLink>
-          </li>
-
-
-          <li className="mobileLi">
-            <NavLink
-              to="/multimedia"
-              className={({ isActive }) =>
-                isActive ? "!text-stone-600" : "hover:text-gray-400"
-              }
-              onClick={() => setIsOpen(!isOpen)}
-            >
-              multimedia
-            </NavLink>
-          </li>
           <li className="mobileLi">
             <NavLink
               to="/about-me"
-              className="hover:text-gray-400"
+              className={({ isActive }) =>
+                isActive ? "!text-stone-600" : "hover:text-gray-400"
+              }
               onClick={() => setIsOpen(!isOpen)}
             >
               about
@@ -164,7 +139,9 @@ function SideBar() {
           <li className="mobileLi">
             <NavLink
               to="/contact-me"
-              className="hover:text-gray-400"
+              className={({ isActive }) =>
+                isActive ? "!text-stone-600" : "hover:text-gray-400"
+              }
               onClick={() => setIsOpen(!isOpen)}
             >
               contact
@@ -242,7 +219,7 @@ function SideBar() {
         <div
           className={`hidden md:flex fixed top-0 left-0 h-screen w-64 p-8 flex-col justify-between z-40 pt-20 transform ${
             isOpen ? "translate-x-0" : "-translate-x-full"
-          } transition-transform duration-300 ease-in-out md:translate-x-0  bg-white text-black md:bg-black md:text-white`}
+          } transition-transform duration-300 ease-in-out md:translate-x-0 md:w-1/4 bg-white text-black md:bg-black md:text-white`}
         >
           <div>
             <div className="text-5xl font-bold hidden md:block">
@@ -259,7 +236,9 @@ function SideBar() {
                 <li>
                   <NavLink
                     to="/"
-                    className="hover:text-gray-400"
+                    className={({ isActive }) =>
+                      isActive ? "!text-stone-600" : "hover:text-gray-400"
+                    }
                     onClick={() => setIsOpen(!isOpen)}
                   >
                     home
@@ -268,7 +247,9 @@ function SideBar() {
                 <li>
                   <NavLink
                     to="/projects"
-                    className="hover:text-gray-400"
+                    className={({ isActive }) =>
+                      isActive ? "!text-stone-600" : "hover:text-gray-400"
+                    }
                     onClick={() => setIsOpen(!isOpen)}
                   >
                     projects
@@ -277,7 +258,9 @@ function SideBar() {
                 <li>
                   <NavLink
                     to="/commissions"
-                    className="hover:text-gray-400"
+                    className={({ isActive }) =>
+                      isActive ? "!text-stone-600" : "hover:text-gray-400"
+                    }
                     onClick={() => setIsOpen(!isOpen)}
                   >
                     commissions
@@ -285,30 +268,10 @@ function SideBar() {
                 </li>
                 <li>
                   <NavLink
-                    to="/tearsheet"
-                    className={({ isActive }) =>
-                      isActive ? "!text-stone-600" : "hover:text-gray-400"
-                    }
-                    onClick={() => setIsOpen(!isOpen)}
-                  >
-                    tearsheet
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink
-                    to="/multimedia"
-                    className={({ isActive }) =>
-                      isActive ? "!text-stone-600" : "hover:text-gray-400"
-                    }
-                    onClick={() => setIsOpen(!isOpen)}
-                  >
-                    multimedia
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink
                     to="/about-me"
-                    className="hover:text-gray-400"
+                    className={({ isActive }) =>
+                      isActive ? "!text-stone-600" : "hover:text-gray-400"
+                    }
                     onClick={() => setIsOpen(!isOpen)}
                   >
                     about
@@ -317,7 +280,9 @@ function SideBar() {
                 <li>
                   <NavLink
                     to="/contact-me"
-                    className="hover:text-gray-400"
+                    className={({ isActive }) =>
+                      isActive ? "!text-stone-600" : "hover:text-gray-400"
+                    }
                     onClick={() => setIsOpen(!isOpen)}
                   >
                     contact

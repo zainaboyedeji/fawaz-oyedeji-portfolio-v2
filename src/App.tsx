@@ -22,8 +22,6 @@ import {
   resalePhotosMetadata,
   yoursinarmsPhotosMetadata,
 } from "./data";
-import TearSheet from "./pages/tearsheet";
-import Multimedia from "./pages/multimedia";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -111,8 +109,6 @@ function App() {
             />
             <Route path="/my-cv" element={<CVPage />} />
             <Route path="/contact-me" element={<ContactMe />} />
-            <Route path="/tearsheet" element={<TearSheet />} />
-            <Route path="/multimedia" element={<Multimedia />} />
             <Route path="/about-me" element={<AboutMe />} />
             <Route path="/projects" element={<Projects />} />
             <Route

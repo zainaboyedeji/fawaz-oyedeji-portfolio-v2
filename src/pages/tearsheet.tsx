@@ -2,21 +2,13 @@ import { useRef } from "react";
 import {
   motion,
   useScroll,
-  useTransform,
-  MotionValue,
   useIsPresent,
   useSpring,
 } from "framer-motion";
 
-function useParallax(value: MotionValue<number>, distance: number) {
-  return useTransform(value, [0, 1], [-distance, distance]);
-}
 
 function Image({ id }: { id: number }) {
   const ref = useRef(null);
-  const { scrollYProgress } = useScroll({ target: ref });
-  const y = useParallax(scrollYProgress, 300);
-
   return (
     <section>
       <div ref={ref}>

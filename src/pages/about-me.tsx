@@ -4,15 +4,29 @@ import { useEffect } from "react";
 
 function AboutMe() {
   const isPresent = useIsPresent();
+
   useEffect(() => {
-    document.body.style.overflow = "hidden";
-        return () => {
+    const handleResize = () => {
+      if (window.innerWidth >= 768) {
+        document.body.style.overflow = "hidden";
+      } else {
+        document.body.style.overflow = "";
+      }
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
       document.body.style.overflow = "";
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
+
   return (
     <>
-      <div className="flex flex-col md:flex-row justify-center items-center overflow-hidden mt-24 px-20">
+      <div className="flex flex-col md:flex-row justify-center items-center overflow-hidden mt-24 px-6 lg:px-20 mb-10 lg:mb-0">
         <div className="w-full md:w-2/5 text-center mb-5 md:mb-0 flex justify-center">
           <img
             src="/fawaz-oyedeji.jpg"

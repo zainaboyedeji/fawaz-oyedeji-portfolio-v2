@@ -82,10 +82,13 @@ function App() {
                     photos={tearSheetPhotosMetadata}
                     category="ts"
                     alt="Tear Sheet"
+                    title="Press news, articles, and client’s work."
+                    titleWidth={8}
+
                   />
                 </AnimatePresence>
               }
-            />{" "}
+            />
             <Route path="/multimedia" element={<Multimedia />} />
             <Route
               path="/commissions/gun-for-hire"
@@ -97,6 +100,7 @@ function App() {
                     titleWidth={8}
                     category="gfh"
                     alt="Gun For Hire"
+                    backButton
                   />
                 </AnimatePresence>
               }
@@ -111,6 +115,7 @@ function App() {
                     titleWidth={8}
                     category="ncsi"
                     alt="New Culture Studios Ibadan"
+                    backButton
                   />
                 </AnimatePresence>
               }
@@ -125,6 +130,7 @@ function App() {
                     titleWidth={8}
                     category="npp"
                     alt="Nigerian Policing Programme"
+                    backButton
                   />
                 </AnimatePresence>
               }
@@ -139,6 +145,7 @@ function App() {
                     titleWidth={8}
                     category="hiddenflows"
                     alt="Hidden Flows"
+                    backButton
                   />
                 </AnimatePresence>
               }
@@ -157,6 +164,7 @@ function App() {
                     titleWidth={8}
                     category="mamp"
                     alt="Mo Advert Mo Power"
+                    backButton
                   />
                 </AnimatePresence>
               }
@@ -171,6 +179,7 @@ function App() {
                     titleWidth={8.2}
                     category="awakening"
                     alt="Awakening"
+                    backButton
                   />
                 </AnimatePresence>
               }
@@ -185,6 +194,7 @@ function App() {
                     titleWidth={8.2}
                     category="yia"
                     alt="Yours In Arms"
+                    backButton
                   />
                 </AnimatePresence>
               }
@@ -199,6 +209,7 @@ function App() {
                     titleWidth={8.2}
                     category="resale"
                     alt="Resale"
+                    backButton
                   />
                 </AnimatePresence>
               }
@@ -213,6 +224,7 @@ function App() {
                     titleWidth={8.2}
                     category="od"
                     alt="Otto Daily"
+                    backButton
                   />
                 </AnimatePresence>
               }

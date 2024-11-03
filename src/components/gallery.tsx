@@ -1,9 +1,11 @@
 import { IoMdArrowRoundBack } from "react-icons/io";
 import { motion, useIsPresent, useScroll, useSpring } from "framer-motion";
 import { Image } from "./image";
+import { ReactNode } from "react";
 
 export interface PhotoMetadata {
   aspectRatio: string;
+  description?: string;
 }
 
 interface Props {
@@ -12,9 +14,17 @@ interface Props {
   title?: string;
   titleWidth?: number;
   photos: PhotoMetadata[];
+  backButton?: ReactNode;
 }
 
-export function Gallery({ category, alt, title, titleWidth, photos }: Props) {
+export function Gallery({
+  category,
+  alt,
+  title,
+  titleWidth,
+  photos,
+  backButton,
+}: Props) {
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 100,
@@ -24,8 +34,8 @@ export function Gallery({ category, alt, title, titleWidth, photos }: Props) {
   const isPresent = useIsPresent();
 
   const handleGoBack = () => {
-    window.history.back(); 
-};
+    window.history.back();
+  };
 
   return (
     <>
@@ -102,7 +112,6 @@ export function Gallery({ category, alt, title, titleWidth, photos }: Props) {
           justify-content: center;
           align-items: center;
           position: relative;
-          // scroll-snap-align: center;
           perspective: 500px;
         }
 
@@ -159,23 +168,26 @@ export function Gallery({ category, alt, title, titleWidth, photos }: Props) {
         }
       `}</style>
       <article>
-        <h1 className="text-center text-8xl font-bold">{title}</h1>
-        {photos.map(({ aspectRatio }, index) => (
-          <Image
-            category={category}
-            index={index + 1}
-            alt={alt}
-            aspectRatio={aspectRatio}
-            key={index}
-          />
+        <h1 className="text-center lg:text-8xl font-bold text-[3rem] mt-20 lg:mt-0">{title}</h1>
+        {photos.map(({ aspectRatio,description }, index) => (
+          <>
+            <Image
+              category={category}
+              index={index + 1}
+              alt={alt}
+              aspectRatio={aspectRatio}
+              key={index}
+            />
+            <h5 className="text-center">{description}</h5>
+          </>
         ))}
         <motion.div className="progress" style={{ scaleX }} />
-        <div className="mb-20 flex justify-center" onClick={handleGoBack}>
-          <IoMdArrowRoundBack style={{ width: "5rem", height: "2rem" }} />
-          <div onClick={handleGoBack} className="font-bold text-2xl">
-            Back To Galleries
+        {backButton ? (
+          <div className="mb-20 flex justify-center cursor-pointer" onClick={handleGoBack}>
+            <IoMdArrowRoundBack style={{ width: "5rem", height: "2rem" }} />
+            <div className="font-bold text-2xl">Back To Galleries</div>
           </div>
-        </div>
+        ) : null}
         <motion.div
           initial={{ scaleX: 1 }}
           animate={{

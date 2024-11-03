@@ -231,7 +231,7 @@ function SideBar() {
       `}</style>
       <div>
         {/* Top Navigation for Mobile */}
-        <div className="flex items-center justify-between fixed top-4 left-4 right-4 z-50 md:hidden">
+        <div className="bg-black flex items-center justify-between fixed left-2 right-2 z-50 md:hidden p-2">
           <div className="text-xl font-bold">
             <NavLink to="/">
               FAWAZ <br /> OYEDEJI.

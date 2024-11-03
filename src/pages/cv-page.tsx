@@ -1,6 +1,9 @@
-import { Link } from "react-router-dom";
+import { IoMdArrowRoundBack } from "react-icons/io";
 
 function CVPage() {
+  const handleGoBack = () => {
+    window.history.back();
+  };
   return (
     <>
       <div className="flex flex-col md:flex-row justify-center items-center mt-28 h-screen">
@@ -80,9 +83,10 @@ function CVPage() {
             </p>
           </div>
 
-          <Link to="/" className="mt-5 mb-5 font-bold underline text-xl">
-            Back to home
-          </Link>
+          <div className="mb-10 mt-10 flex justify-center cursor-pointer" onClick={handleGoBack}>
+            <IoMdArrowRoundBack style={{ width: "5rem", height: "2rem" }} />
+            <div className="font-bold text-2xl">Go Back</div>
+          </div>
         </div>
       </div>
     </>

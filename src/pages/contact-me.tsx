@@ -43,7 +43,7 @@ function ContactMe() {
           can just email me to say hi.
         </p>
 
-        <div className="flex flex-col md:flex-row mt-20 px-20">
+        <div className="flex flex-col md:flex-row mt-20 lg:px-20 px-6">
           <div className="md:w-1/2 mb-8 md:mb-0">
             <p className="mb-5">
               <strong>Email:</strong> contactfawazoyedeji@gmail.com
@@ -99,7 +99,7 @@ function ContactMe() {
               </div>
 
               <button
-                className="flex justify-center w-2/5 px-4 py-2 bg-white text-black rounded-md hover:bg-white hover:text-black focus:outline-none"
+                className="flex justify-center lg:w-2/5 w-full px-4 py-2 bg-white text-black rounded-md hover:bg-white hover:text-black focus:outline-none"
               >
                 Send Message
               </button>

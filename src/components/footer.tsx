@@ -1,14 +1,9 @@
-import { Logo } from "./logo";
-
-export function Footer({ title = "", url = "" }) {
+const Footer = () => {
   return (
-    <footer id="sandbox-title">
-      <a href="https://www.framer.com/motion/" target="_blank" rel="noreferrer">
-        <Logo />
-      </a>
-      <a href={url} target="_blank" rel="noreferrer">
-        <code>{title}</code>
-      </a>
+    <footer>
+      <p className="text-sm">&copy; {new Date().getFullYear()} Fawaz Oyedeji. All rights reserved.</p>
     </footer>
   );
-}
+};
+
+export default Footer;

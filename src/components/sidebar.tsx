@@ -183,52 +183,61 @@ function SideBar() {
   return (
     <>
       <style>{`
-        .menu {
-          position: fixed;
-          top: 0;
-          left: 0;
-          bottom: 0;
-          width: 400px;
-          background: var(--accent);
-          padding-top: 100px;
-          transform: translateX(-100%);
-          will-change: transform;
-        }
+  .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 400px;
+    background: var(--accent);
+    padding-top: 100px;
+    transform: translateX(-100%);
+    will-change: transform;
+    overflow: hidden;
+  }
 
-        .mobileUl {
-          display: flex;
-          flex-direction: column;
-          gap: 10px;
-          padding: 15px;
-        }
+  .mobileUl {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+  }
 
-        .mobileLi {
-          color: var(--background);
-          display: block;
-          transform-origin: -20px 50%;
-          font-weight: bold;
-          font-size: 48px;
-          padding: 10px;
-          will-change: transform, opacity, filter;
-        }
+  .mobileLi {
+    color: var(--background);
+    display: block;
+    transform-origin: -20px 50%;
+    font-weight: bold;
+    font-size: 48px;
+    padding: 10px;
+    will-change: transform, opacity, filter;
+  }
 
-        .menuButton {
-          outline: none;
-          border: none;
-          -webkit-user-select: none;
-          -moz-user-select: none;
-          -ms-user-select: none;
-          cursor: pointer;
-          position: absolute;
-          top: 5px;
-          left: 300px;
-          width: 40px;
-          height: 40px;
-          border-radius: 50%;
-          background: var(--accent);
-          padding: 10px;
-        }
-      `}</style>
+  .menuButton {
+    outline: none;
+    border: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    left: 300px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--accent);
+    padding: 10px;
+  }
+
+  /* Mobile-specific styles */
+  @media (max-width: 768px) {
+    .menu {
+      overflow-y: auto;
+      max-height: 100vh; /* Restricts height to viewport height */
+    }
+  }
+`}</style>
       <div>
         {/* Top Navigation for Mobile */}
         <div className="bg-black flex items-center justify-between fixed left-2 right-2 z-50 md:hidden p-2">

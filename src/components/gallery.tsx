@@ -126,7 +126,7 @@ export function Gallery({
 
         img {
           position: absolute;
-          top: 0px;
+          top: 14px;
           left: 0;
           right: 0;
           bottom: 0;
@@ -168,8 +168,10 @@ export function Gallery({
         }
       `}</style>
       <article>
-        <h1 className="text-center lg:text-8xl font-bold text-[3rem] mt-20 lg:mt-0">{title}</h1>
-        {photos.map(({ aspectRatio,description }, index) => (
+        <h1 className="text-center lg:text-8xl font-bold text-[3rem] mt-20 lg:mt-0">
+          {title}
+        </h1>
+        {photos.map(({ aspectRatio, description }, index) => (
           <>
             <Image
               category={category}
@@ -178,13 +180,16 @@ export function Gallery({
               aspectRatio={aspectRatio}
               key={index}
             />
-            <h5 className="text-center">{description}</h5>
+            <h5 className="text-center mb-10">{description}</h5>
           </>
         ))}
         <motion.div className="progress" style={{ scaleX }} />
         {backButton ? (
-          <div className="mb-20 flex justify-center cursor-pointer" onClick={handleGoBack}>
-            <IoMdArrowRoundBack style={{ width: "5rem", height: "2rem" }} />
+          <div
+            className="mb-20 flex justify-center cursor-pointer"
+            onClick={handleGoBack}
+          >
+            <IoMdArrowRoundBack style={{ width: "2rem", height: "2rem" }} />
             <div className="font-bold text-2xl">Back To Galleries</div>
           </div>
         ) : null}

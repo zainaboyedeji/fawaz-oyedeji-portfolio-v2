@@ -4,12 +4,16 @@ import { useEffect, useState } from "react";
 function ContactMe() {
   const isPresent = useIsPresent();
   const [formStatus, setFormStatus] = useState("");
-  useEffect(() => {
+
+useEffect(() => {
+  if (window.innerWidth > 768) {
     document.body.style.overflow = "hidden";
-        return () => {
-      document.body.style.overflow = "";
-    };
-  }, []);
+  }
+  return () => {
+    document.body.style.overflow = "";
+  };
+}, []);
+
 
   const handleSubmit = async (e:any) => {
     e.preventDefault();

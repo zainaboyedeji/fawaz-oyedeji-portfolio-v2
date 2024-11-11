@@ -80,10 +80,6 @@ function TearSheet() {
         }
 
         @media (max-width: 768px) {
-          h2 {
-            font-size: 50px;
-            left: calc(50% + 20px);
-          }
 
           section > div {
             margin: 10px;

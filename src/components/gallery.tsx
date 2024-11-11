@@ -40,16 +40,6 @@ export function Gallery({
   return (
     <>
       <style>{`
-        h2 {
-          margin: 0;
-          color: var(--accent);
-          left: calc(50% + 130px);
-          font-size: 100px;
-          font-weight: 700;
-          letter-spacing: -3px;
-          line-height: 1.2;
-          position: absolute;
-        }
 
         p {
           margin: 0 0 30px 0;
@@ -153,10 +143,6 @@ export function Gallery({
         }
 
         @media (max-width: 768px) {
-          h2 {
-            font-size: 50px;
-            left: calc(50% + 20px);
-          }
 
           section > div {
             margin: 10px;
@@ -168,7 +154,7 @@ export function Gallery({
         }
       `}</style>
       <article>
-        <h1 className="text-center lg:text-8xl font-bold text-[3rem] mt-20 lg:mt-0">
+        <h1 className="text-center lg:text-8xl font-bold text-[3rem] mt-20">
           {title}
         </h1>
         {photos.map(({ aspectRatio, description }, index) => (

@@ -17,11 +17,10 @@ export function Image({ alt, category, index, aspectRatio }: Props) {
   const y = useParallax(scrollYProgress, 300);
 
   return (
-       <section>
+    <section>
       <div ref={ref} style={{ aspectRatio }}>
         <img src={`/${category}-${index}.jpg`} alt={alt} />
       </div>
-      <motion.h2 style={{ y }}>{`#0${index}`}</motion.h2>
     </section>
   );
 }

@@ -77,13 +77,6 @@ function Commissions() {
           font-style: normal;
         }
 
-        #progress {
-          position: fixed;
-          top: 20px;
-          left: 20px;
-          transform: rotate(-90deg);
-        }
-
         circle {
           stroke-dashoffset: 0;
           stroke-width: 15%;
@@ -93,10 +86,6 @@ function Commissions() {
         .bg {
           stroke: var(--accent);
           opacity: 0.3;
-        }
-
-        #progress .indicator {
-          stroke: var(--accent);
         }
 
         ::-webkit-scrollbar {
@@ -124,28 +113,7 @@ function Commissions() {
           line-height: 1.2;
           position: absolute;
         }
-
-        section {
-          height: 100vh;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          position: relative;
-          scroll-snap-align: center;
-          perspective: 500px;
-        }
-
-        section > div {
-          aspect-ratio: 4/3;
-          height: 80vh;
-          position: relative;
-          max-height: 90vh;
-          margin: 20px;
-          background: var(--white);
-          overflow: hidden;
-          background: var(--ash-black);
-        }
-
+          
         img {
           position: absolute;
           top: 0;
@@ -154,15 +122,6 @@ function Commissions() {
           bottom: 0;
           width: 100%;
           height: 100%;
-        }
-
-        .progress {
-          position: fixed;
-          left: 0;
-          right: 0;
-          height: 5px;
-          background: var(--accent);
-          bottom: 100px;
         }
 
         .back {

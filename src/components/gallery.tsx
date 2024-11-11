@@ -97,7 +97,6 @@ export function Gallery({
         }
 
         section {
-          height: 100vh;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -110,7 +109,6 @@ export function Gallery({
           height: 80vh;
           position: relative;
           max-height: 90vh;
-          margin: 20px;
           overflow: hidden;
         }
 
@@ -166,7 +164,7 @@ export function Gallery({
               aspectRatio={aspectRatio}
               key={index}
             />
-            <h5 className="text-center mb-10">{description}</h5>
+            {description ? <h5 className="text-center">{description}</h5> : null}
           </>
         ))}
         <motion.div className="progress" style={{ scaleX }} />

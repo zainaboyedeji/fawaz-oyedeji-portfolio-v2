@@ -173,7 +173,7 @@ function Commissions() {
             </NavLink>
           </li>
           <li className="projectsLI">
-            <NavLink to="/projects/awakening">Awakening</NavLink>
+            <NavLink to="/projects/attestation">Attestation</NavLink>
           </li>
           <li className="projectsLI">
             <NavLink to="/projects/yours-in-arms">Yours In Arms</NavLink>

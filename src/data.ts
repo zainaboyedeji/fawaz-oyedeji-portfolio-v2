@@ -16,7 +16,16 @@ export const mampPhotosMetadata: PhotoMetadata[] = [
   { aspectRatio: horizontal },
 ];
 
-export const awakeningPhotosMetadata: PhotoMetadata[] = [
+export const attestationPhotosMetadata: PhotoMetadata[] = [
+  { aspectRatio: horizontal },
+  { aspectRatio: horizontal },
+  { aspectRatio: horizontal },
+  { aspectRatio: horizontal },
+  { aspectRatio: horizontal },
+  { aspectRatio: horizontal },
+  { aspectRatio: horizontal },
+  { aspectRatio: horizontal },
+  { aspectRatio: horizontal },
   { aspectRatio: horizontal },
   { aspectRatio: horizontal },
   { aspectRatio: horizontal },

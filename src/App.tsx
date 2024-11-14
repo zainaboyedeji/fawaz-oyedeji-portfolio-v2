@@ -11,7 +11,7 @@ import ScrollToTop from "./components/scroll-to-top";
 import LoadingSpinner from "./components/loading-spinner";
 import CVPage from "./pages/cv-page";
 import {
-  awakeningPhotosMetadata,
+  attestationPhotosMetadata,
   gfhPhotosMetadata,
   hiddenflowsPhotosMetadata,
   homePhotosMetadata,
@@ -171,15 +171,15 @@ function App() {
                 }
               />
               <Route
-                path="/projects/awakening"
+                path="/projects/attestation"
                 element={
                   <AnimatePresence mode="wait">
                     <Gallery
-                      photos={awakeningPhotosMetadata}
-                      title="Awakening"
+                      photos={attestationPhotosMetadata}
+                      title="Attestation"
                       titleWidth={8.2}
-                      category="awakening"
-                      alt="Awakening"
+                      category="attestation"
+                      alt="Attestation"
                       backButton
                     />
                   </AnimatePresence>

@@ -2,6 +2,7 @@ import { IoMdArrowRoundBack } from "react-icons/io";
 import { motion, useIsPresent, useScroll, useSpring } from "framer-motion";
 import { Image } from "./image";
 import { ReactNode } from "react";
+import { HtmlRenderer } from "./htmlRenderer";
 
 export interface PhotoMetadata {
   aspectRatio: string;
@@ -12,7 +13,7 @@ interface Props {
   alt: string;
   category: string;
   title?: string;
-  titleWidth?: number;
+  essay?: string;
   photos: PhotoMetadata[];
   backButton?: ReactNode;
 }
@@ -21,7 +22,7 @@ export function Gallery({
   category,
   alt,
   title,
-  titleWidth,
+  essay,
   photos,
   backButton,
 }: Props) {
@@ -40,7 +41,6 @@ export function Gallery({
   return (
     <>
       <style>{`
-
         p {
           margin: 0 0 30px 0;
           font-size: 18px;
@@ -152,9 +152,10 @@ export function Gallery({
         }
       `}</style>
       <article>
-        <h1 className="text-center lg:text-8xl font-bold text-[3rem] mt-20">
+        <h1 className="text-center lg:text-8xl font-bold text-[3rem] mt-20 mb-5">
           {title}
         </h1>
+        {essay ? <HtmlRenderer htmlContent={essay} className="lg:ml-20 ml-2" /> : null}
         {photos.map(({ aspectRatio, description }, index) => (
           <>
             <Image
@@ -164,7 +165,9 @@ export function Gallery({
               aspectRatio={aspectRatio}
               key={index}
             />
-            {description ? <h5 className="text-center">{description}</h5> : null}
+            {description ? (
+              <h5 className="text-center">{description}</h5>
+            ) : null}
           </>
         ))}
         <motion.div className="progress" style={{ scaleX }} />

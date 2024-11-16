@@ -2,6 +2,7 @@ import { IoMdArrowRoundBack } from "react-icons/io";
 import { motion, useIsPresent, useScroll, useSpring } from "framer-motion";
 import { Image } from "./image";
 import { ReactNode } from "react";
+import { HtmlRenderer } from "./htmlRenderer";
 
 export interface PhotoMetadata {
   aspectRatio: string;
@@ -154,7 +155,7 @@ export function Gallery({
         <h1 className="text-center lg:text-8xl font-bold text-[3rem] mt-20 mb-5">
           {title}
         </h1>
-        {essay ? <h4 className="ml-20">{essay}</h4> : null}
+        {essay ? <HtmlRenderer htmlContent={essay} className="lg:ml-20 ml-2" /> : null}
         {photos.map(({ aspectRatio, description }, index) => (
           <>
             <Image

@@ -152,7 +152,7 @@ export function Gallery({
         }
       `}</style>
       <article>
-        <h1 className="text-center lg:text-8xl font-bold text-[3rem] mt-20 mb-5">
+        <h1 className="text-center lg:text-6xl font-bold text-[3rem] mt-20 mb-5">
           {title}
         </h1>
         {essay ? <HtmlRenderer htmlContent={essay} className="lg:ml-20 ml-2" /> : null}
@@ -173,11 +173,11 @@ export function Gallery({
         <motion.div className="progress" style={{ scaleX }} />
         {backButton ? (
           <div
-            className="mb-20 flex justify-center cursor-pointer"
+            className="mb-20 flex justify-center cursor-pointer mt-10"
             onClick={handleGoBack}
           >
-            <IoMdArrowRoundBack style={{ width: "2rem", height: "2rem" }} />
-            <div className="font-bold text-2xl">Back To Galleries</div>
+            <IoMdArrowRoundBack style={{ width: "2rem", height: "2rem",marginRight: "1rem" }} />
+            <div className="font-bold text-xl">Back To Galleries</div>
           </div>
         ) : null}
         <motion.div

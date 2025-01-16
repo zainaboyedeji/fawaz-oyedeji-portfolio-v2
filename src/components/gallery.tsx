@@ -103,11 +103,11 @@ export function Gallery({
         }
       `}</style>
       <article>
-        <h1 className="text-center lg:text-6xl font-bold text-[3rem] mt-20 mb-5">
+        <h1 className="text-center lg:text-6xl font-bold text-[3rem] lg:mt-4 mb-5 mt-20">
           {title}
         </h1>
         {essay && <HtmlRenderer htmlContent={essay} className="lg:ml-20 ml-2" />}
-        <section className="ml-20">
+        <section className="lg:ml-20 lg:mr-20">
           {photos.map(({ aspectRatio, description }, index) => (
             <div key={index} className="full-screen-image">
               <Image

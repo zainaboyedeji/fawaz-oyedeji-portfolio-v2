@@ -46,140 +46,87 @@ export function Gallery({
           font-size: 18px;
         }
 
-        #sandbox-title {
-          position: fixed;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          display: flex;
-          justify-content: flex-start;
-          align-items: center;
-          padding: 20px;
-          border-top: 1px dotted var(--accent);
-          background: rgba(255, 255, 255, 0.7);
-          background-size: 4px 4px;
-          backdrop-filter: blur(4px);
-          -webkit-backdrop-filter: blur(4px);
-          -moz-backdrop-filter: blur(4px);
-          font-size: 14px;
-          line-height: 14px;
-        }
-
-        #sandbox-title svg {
-          margin-right: 20px;
-        }
-
-        #sandbox-title a {
-          text-decoration: none;
-          color: var(--accent);
-        }
-
         #progress {
           position: fixed;
-          top: 20px;
-          left: 20px;
-          transform: rotate(-90deg);
-        }
-
-        circle {
-          stroke-dashoffset: 0;
-          stroke-width: 15%;
-          fill: none;
-        }
-
-        .bg {
-          stroke: var(--accent);
-          opacity: 0.3;
-        }
-
-        #progress .indicator {
-          stroke: var(--accent);
-        }
-
-        section {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          position: relative;
-          perspective: 500px;
-        }
-
-        section > div {
-          aspect-ratio: 4/3;
-          height: 80vh;
-          position: relative;
-          max-height: 90vh;
-          overflow: hidden;
-        }
-
-        img {
-          position: absolute;
-          top: 14px;
+          top: 0;
           left: 0;
-          right: 0;
-          bottom: 0;
-          width: 100%;
-          height: 100%;
-        }
-
-        .progress {
-          position: fixed;
-          left: 0;
-          right: 0;
           height: 5px;
           background: var(--accent);
-          bottom: 100px;
-          margin-right:8rem;
-          margin-left:28rem;
+          width: 100%;
         }
 
-        .back {
-          padding: 100px;
+        .full-screen-image {
           display: flex;
+          flex-direction: column;
           justify-content: center;
-          align-self: center;
+          align-items: center;
+          height: 100vh;
+          width: 100%;
+          position: relative;
+          overflow: hidden;
+          background-color: black;
         }
 
-        @media (max-width: 768px) {
+        .full-screen-image img {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          max-width: 100%;
+          max-height: 100%;
+          object-fit: contain;
+        }
 
-          section > div {
-            margin: 10px;
-          }
+        .description {
+          position: absolute;
+          bottom: 20px;
+          color: white;
+          background-color: rgba(0, 0, 0, 0.5);
+          padding: 10px 20px;
+          border-radius: 5px;
+          font-size: 16px;
+          text-align: center;
+        }
 
-          img {
-            object-fit: cover;
-          }
+        .back-button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 20px 0;
+          cursor: pointer;
+        }
+
+        .back-button svg {
+          margin-right: 10px;
+          width: 24px;
+          height: 24px;
         }
       `}</style>
       <article>
         <h1 className="text-center lg:text-6xl font-bold text-[3rem] mt-20 mb-5">
           {title}
         </h1>
-        {essay ? <HtmlRenderer htmlContent={essay} className="lg:ml-20 ml-2" /> : null}
-        {photos.map(({ aspectRatio, description }, index) => (
-          <>
-            <Image
-              category={category}
-              index={index + 1}
-              alt={alt}
-              aspectRatio={aspectRatio}
-              key={index}
-            />
-            {description ? (
-              <h5 className="text-center">{description}</h5>
-            ) : null}
-          </>
-        ))}
+        {essay && <HtmlRenderer htmlContent={essay} className="lg:ml-20 ml-2" />}
+        <section className="ml-20">
+          {photos.map(({ aspectRatio, description }, index) => (
+            <div key={index} className="full-screen-image">
+              <Image
+                category={category}
+                index={index + 1}
+                alt={alt}
+                aspectRatio={aspectRatio}
+              />
+              {description && <div className="description">{description}</div>}
+            </div>
+          ))}
+        </section>
         <motion.div className="progress" style={{ scaleX }} />
-        {backButton ? (
-          <div
-            className="mb-20 flex justify-center cursor-pointer mt-10"
-            onClick={handleGoBack}
-          >
-            <IoMdArrowRoundBack style={{ width: "2rem", height: "2rem",marginRight: "1rem" }} />
-            <div className="font-bold text-xl">Back To Galleries</div>
+        {backButton && (
+          <div className="back-button" onClick={handleGoBack}>
+            <IoMdArrowRoundBack />
+            <span>Back To Galleries</span>
           </div>
-        ) : null}
+        )}
         <motion.div
           initial={{ scaleX: 1 }}
           animate={{

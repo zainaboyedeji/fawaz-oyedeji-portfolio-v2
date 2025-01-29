@@ -220,9 +220,10 @@ function SideBar() {
     -moz-user-select: none;
     -ms-user-select: none;
     cursor: pointer;
-    position: absolute;
-    top: 15px;
-    left: 300px;
+     position: absolute;
+  top: 15px;
+  left: auto; 
+  right: 15px; 
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -240,7 +241,7 @@ function SideBar() {
 `}</style>
       <div>
         {/* Top Navigation for Mobile */}
-        <div className="bg-black flex items-center justify-between fixed left-2 right-2 z-50 md:hidden p-2">
+        <div className="bg-black flex items-center justify-between fixed left-0 right-0 z-50 md:hidden p-4 w-full">
           <div className="text-xl font-bold">
             <NavLink to="/">
               FAWAZ <br /> OYEDEJI.

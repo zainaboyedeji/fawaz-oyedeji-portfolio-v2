@@ -70,6 +70,12 @@ footer {
   text-align: center;
 }
 
-.openLink{
-  color:red;
+.galleryLink {
+  color: #1E40AF; 
+  text-decoration: underline;
 }
+
+.galleryLink:hover {
+  color: #9333EA; 
+}
+

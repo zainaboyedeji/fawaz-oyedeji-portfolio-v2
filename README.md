@@ -41,10 +41,10 @@ He has received grants, awards, and commissions from prestigious institutions in
 
 ## How to View & Connect
 
-- 📸 Portfolio: <a href="https://fawazoyedeji.com/" target="_blank">Visit Portfolio</a>
-- 📄 CV: <a href="https://fawazoyedeji.com/cv" target="_blank">View Here</a>
-- 📩 Contact: <a href="mailto:contactfawazoyedeji@gmail.com" target="_blank">Email</a>
-- 🔗 Social Media: <a href="https://www.instagram.com/fawaz.oyedeji/" target="_blank">Instagram</a> | <a href="https://twitter.com/fawazoyedeji" target="_blank">Twitter</a>
+- 📸 Portfolio: <a href="https://fawazoyedeji.com/" target="_blank" rel="noopener noreferrer">Visit Portfolio</a>
+- 📄 CV: <a href="https://fawazoyedeji.com/cv" target="_blank" rel="noopener noreferrer">View Here</a>
+- 📩 Contact: <a href="mailto:contactfawazoyedeji@gmail.com" target="_blank" rel="noopener noreferrer">Email</a>
+- 🔗 Social Media: <a href="https://www.instagram.com/fawaz.oyedeji/" target="_blank" rel="noopener noreferrer">Instagram</a> | <a href="https://twitter.com/fawazoyedeji" target="_blank" rel="noopener noreferrer">Twitter</a>
 
 ## License
 

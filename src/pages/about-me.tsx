@@ -71,7 +71,7 @@ function AboutMe() {
 
           <p>
             View full CV
-            <Link to="/my-cv" className="ml-1 text-gray-400 underline">
+            <Link to="/my-cv" className="ml-1 text-blue-700 underline hover:text-purple-600">
               here
             </Link>
           </p>

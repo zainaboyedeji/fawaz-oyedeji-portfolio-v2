@@ -130,6 +130,7 @@ class="ml-2 galleryLink"
                       category="gfh"
                       alt="Gun For Hire"
                       backButton
+                      arrow
                     />
                   </AnimatePresence>
                 }
@@ -182,6 +183,7 @@ class="ml-2 galleryLink"
                       category="ncsi"
                       alt="New Culture Studios Ibadan"
                       backButton
+                      arrow
                     />
                   </AnimatePresence>
                 }
@@ -220,6 +222,7 @@ class="ml-2 galleryLink"
                       category="npp"
                       alt="Nigerian Policing Programme"
                       backButton
+                      arrow
                     />
                   </AnimatePresence>
                 }
@@ -262,6 +265,7 @@ class="ml-2 galleryLink"
                       category="hiddenflows"
                       alt="Hidden Flows"
                       backButton
+                      arrow
                     />
                   </AnimatePresence>
                 }
@@ -286,6 +290,7 @@ class="ml-2 galleryLink"
                       category="mamp"
                       alt="Mo Advert Mo Power"
                       backButton
+                      arrow
                     />
                   </AnimatePresence>
                 }
@@ -302,6 +307,7 @@ class="ml-2 galleryLink"
                       category="attestation"
                       alt="Attestation"
                       backButton
+                      arrow
                     />
                   </AnimatePresence>
                 }
@@ -321,6 +327,7 @@ class="ml-2 galleryLink"
                       category="yia"
                       alt="Yours In Arms"
                       backButton
+                      arrow
                     />
                   </AnimatePresence>
                 }
@@ -338,6 +345,7 @@ class="ml-2 galleryLink"
                       category="resale"
                       alt="Resale"
                       backButton
+                      arrow
                     />
                   </AnimatePresence>
                 }
@@ -356,6 +364,7 @@ class="ml-2 galleryLink"
                       category="od"
                       alt="Otto Daily"
                       backButton
+                      arrow
                     />
                   </AnimatePresence>
                 }

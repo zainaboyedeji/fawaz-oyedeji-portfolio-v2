@@ -17,6 +17,7 @@ interface Props {
   date?: string;
   photos: PhotoMetadata[];
   backButton?: ReactNode;
+  arrow?: ReactNode;
 }
 
 export function Gallery({
@@ -27,6 +28,7 @@ export function Gallery({
   date,
   photos,
   backButton,
+  arrow,
 }: Props) {
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
@@ -108,16 +110,19 @@ export function Gallery({
 `}</style>
 
       <article>
-        {title && (
           <div className="flex lg:ml-20 ml-2">
-            <div className="back-button" onClick={handleGoBack}>
+          {arrow && (  <div className="back-button" onClick={handleGoBack}>
               <IoMdArrowRoundBack />
             </div>
+          ) }
+            {title && (
+
             <h1 className="w-full justify-center text-center lg:text-6xl font-bold text-[3rem] lg:mt-4 mb-5 mt-20">
               {title}
             </h1>
+                    )}
+
           </div>
-        )}
 
         {essay && (
           <HtmlRenderer htmlContent={essay} className="lg:ml-20 ml-2" />

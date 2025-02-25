@@ -14,6 +14,7 @@ interface Props {
   category: string;
   title?: string;
   essay?: string;
+  date?: string;
   photos: PhotoMetadata[];
   backButton?: ReactNode;
 }
@@ -23,6 +24,7 @@ export function Gallery({
   alt,
   title,
   essay,
+  date,
   photos,
   backButton,
 }: Props) {
@@ -37,6 +39,7 @@ export function Gallery({
   const handleGoBack = () => {
     window.history.back();
   };
+  console.log("Date Prop:", date);
 
   return (
     <>
@@ -45,7 +48,6 @@ export function Gallery({
           margin: 0 0 30px 0;
           font-size: 18px;
         }
-
         #progress {
           position: fixed;
           top: 0;
@@ -79,12 +81,11 @@ export function Gallery({
 
         .description {
           position: absolute;
-          bottom: 20px;
           color: white;
           background-color: rgba(0, 0, 0, 0.5);
           padding: 10px 20px;
           border-radius: 5px;
-          font-size: 16px;
+          font-size: 20px;
           text-align: center;
         }
 
@@ -111,6 +112,8 @@ export function Gallery({
         {essay && (
           <HtmlRenderer htmlContent={essay} className="lg:ml-20 ml-2" />
         )}
+        {date && <div className="lg:ml-20 ml-2 font-bold text-lg">{date}</div>}
+
         <section className="lg:ml-20 lg:mr-20">
           {photos.map(({ aspectRatio, description }, index) => (
             <div key={index} className="full-screen-image">

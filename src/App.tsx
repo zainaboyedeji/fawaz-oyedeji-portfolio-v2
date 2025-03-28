@@ -167,7 +167,7 @@ class="ml-2 galleryLink"
           >
             here:
           </a>
-          or view online images
+          or view online article
           <a
             href="https://www.architectural-review.com/essays/revisit/revisit-new-culture-studios-in-ibadan-nigeria-by-demas-nwoko"
             target="_blank"

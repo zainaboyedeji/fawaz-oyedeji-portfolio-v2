@@ -49,7 +49,7 @@ export function Gallery({
 
         p {
           margin: 0 0 30px 0;
-          font-size: 18px;
+          font-size: 17px;
         }
         #progress {
           position: fixed;
@@ -110,26 +110,28 @@ export function Gallery({
 `}</style>
 
       <article>
-          <div className="flex lg:ml-20 ml-2">
-          {arrow && (  <div className="back-button" onClick={handleGoBack}>
+        <div className="flex lg:ml-20 ml-2">
+          {arrow && (
+            <div className="back-button" onClick={handleGoBack}>
               <IoMdArrowRoundBack />
             </div>
-          ) }
-            {title && (
-
+          )}
+          {title && (
             <h1 className="w-full justify-center text-center lg:text-6xl font-bold text-[3rem] lg:mt-4 mb-5 mt-20">
               {title}
             </h1>
-                    )}
-
-          </div>
+          )}
+        </div>
 
         {essay && (
-          <HtmlRenderer htmlContent={essay} className="lg:ml-20 ml-2" />
+          <HtmlRenderer
+            htmlContent={essay}
+            className="lg:ml-20 lg:mr-10 ml-2"
+          />
         )}
         {date && <div className="lg:ml-20 ml-2 font-bold text-lg">{date}</div>}
 
-        <section className="lg:ml-20 lg:mr-20 lg:mt-8">
+        <section className="lg:ml-10 lg:mr-10 lg:mt-8">
           {photos.map(({ aspectRatio, description }, index) => (
             <div key={index} className="full-screen-image">
               <Image

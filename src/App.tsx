@@ -281,12 +281,12 @@ class="ml-2 galleryLink"
                     <Gallery
                       photos={mampPhotosMetadata}
                       title="Mo Advert Mo Power"
-                      essay={`<p>Every four years, when elections are approaching, thousands and thousands of party-political posters start to invade our cityscape. This has become almost a campaign weapon for parties" rivalries over urban space and for politicians to demonstrate their power and demarcate their territories. It is a visual performance of power.</p>
-                        <p>In this work, I delve into the role of political posters in everyday party politicking in Nigeria, where they have become an almost normal or naturalized habitual repertoire of political action.</p>
-                        <p>Printing in Nigeria is a growing industry that is becoming increasingly important to political culture. It is worth millions, despite still using artisanal methods in most places.  Posters, banners, and billboards are never big enough for politicians to impregnate our minds with their electoral ambition. Campaign after campaign, the posters are twice as large, twice as tall, and always more dominant than the previous one.</p>
-                        <p> The candidates want to convince voters that they would be the best choice to run their life, through portraits that mimic historical and reassuring political leaders, either smiling or with emotionless faces. For the few months of the campaign, they are everywhere, on every corner, every street or bridge, and major road. We, as citizens, experience the hyper-visibility of politics before the images tarnish and the promises fade.</p>
-                        
+                      essay={`<p>Every four years, when elections are approaching, thousands and thousands of party-political posters start to invade our cityscape. This has become almost a campaign weapon for parties' rivalries over urban space and for politicians to demonstrate their power and demarcate their territories. It is a visual performance of power.</p>
+                        <p>This work looks at the role of election posters as one of the most crucial forms of political communication in Nigeria, especially during electoral campaigns.</p>
+                        <p> The Nigerian printing industry, valued at approximately $3 billion annually as of 2021, is expanding and playing an increasingly vital role in the political culture. Yet, a significant portion of the sector still depends on traditional and semi-traditional methods. Posters, banners, and billboards are never quite big enough for politicians eager to imprint their electoral ambitions onto the public. With every campaign, the posters grow—twice as large, twice as tall, and always more imposing than before.</p>
+                        <p>  The candidates want to convince voters that they would be the best choice to run their lives, through portraits that mimic historical and reassuring political leaders, either smiling or with emotionless faces. For the few months of the campaign, they are everywhere, on every corner, every street or bridge, and major roads… We, as citizens, experience the hyper-visibility of politics before the images tarnish and the promises fade.</p>
                         `}
+                      date='"2022 - 2023"'
                       category="mamp"
                       alt="Mo Advert Mo Power"
                       backButton
@@ -319,10 +319,11 @@ class="ml-2 galleryLink"
                     <Gallery
                       photos={yoursinarmsPhotosMetadata}
                       title="Yours In Arms"
-                      essay={`<p>‘'Yours In Arms' highlights how surrounding circumstances have shaped the day-to-day struggles and resilience of students preserving the history of a civilian-run infantry in Nigeria.</p>
-                        <p>The establishment of paramilitary in institutions dates back to the Nigerian Second Republic[1976] under a militia regime headed by General Olusegun Obasanjo as a prospect to coax moreeducated fellows into the armed forces, soldiers would regularly come to inculcate military trainingin drills and parades, self-defense, physical fitness, first aid, citizenship, and leadership. Culturally,since its establishment, the program has been responsible for breeding a relative number ofcivilian youths dispersed throughout the nation, attached to a grass-rooted political scheme like this.</p>
+                      essay={`<p>‘'Yours In Arms' highlights how surrounding circumstances have shaped the day-to-day struggles and resilience of student cadets in Nigeria.
+</p>
+                        <p>The establishment of unarmed paramilitary corps in academic institutions dates back to the Nigerian Second Republic [1976] under a militia regime headed by General Olusegun Obasanjo as a prospect to coax more educated fellows into the armed forces. Soldiers would regularly come to inculcate military training in drills and parades, self-defense, physical fitness, first aid, citizenship, and leadership. Culturally, since its establishment, the program has been responsible for breeding a relative number of civilian youths dispersed throughout the nation, attached to a grass-rooted political scheme like this.</p>
                       
-                      <p>In modern times, the degree of pressure from being both CADET and STUDENT is considered anexhausting task.At Yaba College Of Technology alone, out of over 16,000 student enrolment,statistics show that approximately only 0.2% of this population usually makes the brave decisionand chose to combine this extracurricular activity with school work and personal life. </p>`}
+                      <p>In modern times, the degree of pressure from being both a cadet and a student is considered an exhausting task. As of 2018, at Yaba College of Technology, out of over 16,000 students enrolled, my report shows that approximately 0.2% of this population usually makes the brave decision and combines this extracurricular activity with school work and personal life. </p>`}
                       date='"2018"'
                       category="yia"
                       alt="Yours In Arms"

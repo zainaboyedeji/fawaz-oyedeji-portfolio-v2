@@ -169,7 +169,7 @@ function Commissions() {
         <ul className="projectUL mt-5">
           <li className="projectsLI">
             <NavLink to="/projects/mo-advert-mo-power">
-              Mo Advert Mo Power
+              Mo’ Advert, Mo’ Power
             </NavLink>
           </li>
           <li className="projectsLI">

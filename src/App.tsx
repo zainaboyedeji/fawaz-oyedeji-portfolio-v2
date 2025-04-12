@@ -280,7 +280,7 @@ class="ml-2 galleryLink"
                   <AnimatePresence mode="wait">
                     <Gallery
                       photos={mampPhotosMetadata}
-                      title="Mo Advert Mo Power"
+                      title="Mo’ Advert, Mo’ Power"
                       essay={`<p>Every four years, when elections are approaching, thousands and thousands of party-political posters start to invade our cityscape. This has become almost a campaign weapon for parties' rivalries over urban space and for politicians to demonstrate their power and demarcate their territories. It is a visual performance of power.</p>
                         <p>This work looks at the role of election posters as one of the most crucial forms of political communication in Nigeria, especially during electoral campaigns.</p>
                         <p> The Nigerian printing industry, valued at approximately $3 billion annually as of 2021, is expanding and playing an increasingly vital role in the political culture. Yet, a significant portion of the sector still depends on traditional and semi-traditional methods. Posters, banners, and billboards are never quite big enough for politicians eager to imprint their electoral ambitions onto the public. With every campaign, the posters grow—twice as large, twice as tall, and always more imposing than before.</p>
@@ -288,7 +288,7 @@ class="ml-2 galleryLink"
                         `}
                       date='"2022 - 2023"'
                       category="mamp"
-                      alt="Mo Advert Mo Power"
+                      alt="Mo’ Advert, Mo’ Power"
                       backButton
                       arrow
                     />

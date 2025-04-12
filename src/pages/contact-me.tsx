@@ -5,17 +5,16 @@ function ContactMe() {
   const isPresent = useIsPresent();
   const [formStatus, setFormStatus] = useState("");
 
-useEffect(() => {
-  if (window.innerWidth > 768) {
-    document.body.style.overflow = "hidden";
-  }
-  return () => {
-    document.body.style.overflow = "";
-  };
-}, []);
+  useEffect(() => {
+    if (window.innerWidth > 768) {
+      document.body.style.overflow = "hidden";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, []);
 
-
-  const handleSubmit = async (e:any) => {
+  const handleSubmit = async (e: any) => {
     e.preventDefault();
     const form = e.target;
     const formData = new FormData(form);
@@ -56,7 +55,7 @@ useEffect(() => {
               <strong>Location:</strong> Lagos, Nigeria.
             </p>
             <p>
-              <strong>Phone:</strong> +234-90-93173219.
+              <strong>Phone:</strong> +234-906-5286612.
             </p>
           </div>
 
@@ -102,9 +101,7 @@ useEffect(() => {
                 ></textarea>
               </div>
 
-              <button
-                className="flex justify-center lg:w-2/5 w-full px-4 py-2 bg-white text-black rounded-md hover:bg-white hover:text-black focus:outline-none"
-              >
+              <button className="flex justify-center lg:w-2/5 w-full px-4 py-2 bg-white text-black rounded-md hover:bg-white hover:text-black focus:outline-none">
                 Send Message
               </button>
             </form>

@@ -1,12 +1,6 @@
 import { stagger, useAnimate } from "framer-motion";
 import { useEffect, useState } from "react";
-import {
-  FaInstagram,
-  FaTwitter,
-  FaLinkedin,
-  FaYoutube,
-  FaShareAlt,
-} from "react-icons/fa";
+import { FaInstagram, FaTwitter, FaLinkedin, FaYoutube } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 
 const Path = (props: any) => (
@@ -389,15 +383,6 @@ function SideBar() {
               className="hover:text-gray-400"
             >
               <FaYoutube />
-            </a>
-            <a
-              href="https://www.instagram.com/fawaz.oyedeji/"
-              target="_blank"
-              rel="noreferrer"
-              title="Share"
-              className="hover:text-gray-400"
-            >
-              <FaShareAlt />
             </a>
           </div>
         </div>

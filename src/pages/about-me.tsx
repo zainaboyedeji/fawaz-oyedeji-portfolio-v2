@@ -27,7 +27,7 @@ function AboutMe() {
   return (
     <>
       <div className="flex flex-col md:flex-row justify-center items-center overflow-hidden mt-24 px-6 lg:px-20 mb-10 lg:mb-0">
-        <div className="w-full md:w-2/5 text-center mb-5 md:mb-0 flex justify-center">
+        <div className="w-full md:w-2/5 text-center mb-5 md:mb-0 flex justify-center mr-4">
           <img src="/fawaz-oyedeji.jpg" alt="fawwaz" className="" />
         </div>
         <div className="w-full md:w-3/5 flex flex-col justify-center text-sm md:text-base">

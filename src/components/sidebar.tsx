@@ -249,7 +249,7 @@ function SideBar() {
 
         {/* Sidebar (visible only on desktop) */}
         <div
-          className={`hidden md:flex fixed top-0 left-0 h-screen w-64 p-8 flex-col justify-between z-40 pt-20 transform ${
+          className={`hidden md:flex fixed top-0 left-0 h-screen w-64 p-8 flex-col justify-between pt-20 transform ${
             isOpen ? "translate-x-0" : "-translate-x-full"
           } transition-transform duration-300 ease-in-out md:translate-x-0 md:w-1/4 bg-white text-black md:bg-black md:text-white`}
         >

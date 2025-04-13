@@ -109,7 +109,7 @@ export function Gallery({
 
 `}</style>
 
-      <article>
+      <article className="mt-10">
         <div className="flex lg:ml-20 ml-2">
           {arrow && (
             <div className="back-button" onClick={handleGoBack}>

@@ -49,8 +49,6 @@ export const yoursinarmsPhotosMetadata: PhotoMetadata[] = [
   { aspectRatio: horizontal },
   { aspectRatio: horizontal },
   { aspectRatio: horizontal },
-  { aspectRatio: horizontal },
-  { aspectRatio: horizontal },
 ];
 
 export const resalePhotosMetadata: PhotoMetadata[] = [

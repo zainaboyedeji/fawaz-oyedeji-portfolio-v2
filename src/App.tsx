@@ -304,6 +304,7 @@ class="ml-2 galleryLink"
                       title="Attestation"
                       essay={`<p>‘Attestation’ reflects on the legacy of the #EndSARS movement, which emerged in 2020 as a response to years of political corruption, human rights violations, and brutality by the Nigerian Police, particularly the Special Anti-Robbery Squad (SARS). Young Nigerians, determined to reform the policing system, organized a series of peaceful nationwide protests, demanding change. Although the movement began with hope, it tragically descended into violence as security forces, primarily the police, used live ammunition and tear gas against protesters, resulting in at least 56 deaths, 12 of whom were killed on October 20, 2020, alone.</p>
                         <p>In an attempt to symbolize the passage of time, I revisited public spaces from pivotal moments of the #EndSARS demonstrations, juxtaposing them with present-day Lagos in 2024. Although this comparison barely reflects Nigeria’s ongoing fight for justice and better living standards, it offers a glimpse into the physical and symbolic changes, hinting at the layers of struggle and adaptation that have unfolded since the 2020 movement.</p>`}
+                      date='"2020/2024"'
                       category="attestation"
                       alt="Attestation"
                       backButton

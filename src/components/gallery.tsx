@@ -41,7 +41,6 @@ export function Gallery({
   const handleGoBack = () => {
     window.history.back();
   };
-  console.log("Date Prop:", date);
 
   return (
     <>
@@ -82,15 +81,14 @@ export function Gallery({
           object-fit: contain;
         }
 
-        .description {
-          position: absolute;
-          color: white;
-          background-color: rgba(0, 0, 0, 0.5);
-          padding: 10px 20px;
-          border-radius: 5px;
-          font-size: 20px;
-          text-align: center;
-        }
+       .description {
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 20px;
+  text-align: center;
+}
+
 
         .back-button {
           display: flex;
@@ -133,15 +131,17 @@ export function Gallery({
 
         <section className="lg:ml-10 lg:mr-10">
           {photos.map(({ aspectRatio, description }, index) => (
-            <div key={index} className="full-screen-image">
-              <Image
-                category={category}
-                index={index + 1}
-                alt={alt}
-                aspectRatio={aspectRatio}
-              />
+            <>
+              <div key={index} className="full-screen-image">
+                <Image
+                  category={category}
+                  index={index + 1}
+                  alt={alt}
+                  aspectRatio={aspectRatio}
+                />
+              </div>
               {description && <div className="description">{description}</div>}
-            </div>
+            </>
           ))}
         </section>
         {/* <motion.div

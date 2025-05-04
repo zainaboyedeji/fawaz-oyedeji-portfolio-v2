@@ -1,5 +1,5 @@
 import { IoMdArrowRoundBack } from "react-icons/io";
-import { motion, useIsPresent, useScroll, useSpring } from "framer-motion";
+import { motion, useIsPresent } from "framer-motion";
 import { Image } from "./image";
 import { ReactNode } from "react";
 import { HtmlRenderer } from "./htmlRenderer";
@@ -30,12 +30,12 @@ export function Gallery({
   backButton,
   arrow,
 }: Props) {
-  const { scrollYProgress } = useScroll();
-  const scaleX = useSpring(scrollYProgress, {
-    stiffness: 100,
-    damping: 30,
-    restDelta: 0.001,
-  });
+  // const { scrollYProgress } = useScroll();
+  // const scaleX = useSpring(scrollYProgress, {
+  //   stiffness: 100,
+  //   damping: 30,
+  //   restDelta: 0.001,
+  // });
   const isPresent = useIsPresent();
 
   const handleGoBack = () => {
@@ -131,7 +131,7 @@ export function Gallery({
         )}
         {date && <div className="lg:ml-20 ml-2 font-bold text-lg">{date}</div>}
 
-        <section className="lg:ml-10 lg:mr-10 lg:mt-8">
+        <section className="lg:ml-10 lg:mr-10">
           {photos.map(({ aspectRatio, description }, index) => (
             <div key={index} className="full-screen-image">
               <Image
@@ -144,10 +144,10 @@ export function Gallery({
             </div>
           ))}
         </section>
-        <motion.div
+        {/* <motion.div
           className="fixed top-0 left-0 h-[5px] bg-[var(--accent)] w-full"
           style={{ scaleX }}
-        />
+        /> */}
         {backButton && (
           <div className="back-button" onClick={handleGoBack}>
             <IoMdArrowRoundBack />

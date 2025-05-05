@@ -81,14 +81,15 @@ export function Gallery({
           object-fit: contain;
         }
 
-       .description {
-  color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-size: 20px;
-  text-align: center;
-}
-
+        .description {
+          position: absolute;
+          color: white;
+          background-color: rgba(0, 0, 0, 0.5);
+          padding: 10px 20px;
+          border-radius: 5px;
+          font-size: 20px;
+          text-align: center;
+        }
 
         .back-button {
           display: flex;
@@ -107,7 +108,7 @@ export function Gallery({
 
 `}</style>
 
-      <article className="mt-10">
+      <article>
         <div className="flex lg:ml-20 ml-2">
           {arrow && (
             <div className="back-button" onClick={handleGoBack}>
@@ -129,19 +130,17 @@ export function Gallery({
         )}
         {date && <div className="lg:ml-20 ml-2 font-bold text-lg">{date}</div>}
 
-        <section className="lg:ml-10 lg:mr-10">
+        <section className="lg:ml-10 lg:mr-10 lg:mt-8">
           {photos.map(({ aspectRatio, description }, index) => (
-            <>
-              <div key={index} className="full-screen-image">
-                <Image
-                  category={category}
-                  index={index + 1}
-                  alt={alt}
-                  aspectRatio={aspectRatio}
-                />
-              </div>
+            <div key={index} className="full-screen-image">
+              <Image
+                category={category}
+                index={index + 1}
+                alt={alt}
+                aspectRatio={aspectRatio}
+              />
               {description && <div className="description">{description}</div>}
-            </>
+            </div>
           ))}
         </section>
         {/* <motion.div

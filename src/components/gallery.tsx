@@ -130,7 +130,7 @@ export function Gallery({
         )}
         {date && <div className="lg:ml-20 ml-2 font-bold text-lg">{date}</div>}
 
-        <section className="lg:ml-10 lg:mr-10 lg:mt-8">
+        <section className="lg:ml-10 lg:mr-10 lg:mt-4">
           {photos.map(({ aspectRatio, description }, index) => (
             <div key={index} className="full-screen-image">
               <Image

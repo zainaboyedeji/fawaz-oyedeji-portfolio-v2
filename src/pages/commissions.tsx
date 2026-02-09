@@ -178,7 +178,7 @@ function Commissions() {
           </li>
 
           <li className="commissionsLI">
-            <NavLink to="/commissions/gun-for-hire">
+            <NavLink to="/commissions/pada-lagos">
               Padà Lagos - Directory
             </NavLink>
           </li>

@@ -13,6 +13,7 @@ import CVPage from "./pages/cv-page";
 import {
   attestationPhotosMetadata,
   gfhPhotosMetadata,
+  padalagosPhotosMetadata,
   hiddenflowsPhotosMetadata,
   homePhotosMetadata,
   mampPhotosMetadata,
@@ -90,6 +91,53 @@ function App() {
                 }
               />
               <Route path="/multimedia" element={<Multimedia />} />
+
+
+
+  <Route
+                path="/commissions/pada-lagos"
+                element={
+                  <AnimatePresence mode="wait">
+                    <Gallery
+                      photos={padalagosPhotosMetadata}
+                      title="Padà Lagos - Directory"
+                      essay={`
+   
+          <p>
+            Padà, The Directory is a book by Padà Lagos documenting twenty accessible public spaces on Lagos Island.
+ -
+          </p>
+        <p>
+          Credits:
+Photography — Fawaz Oyedeji
+Cartography — Add.apt & Marco Phillip
+Words & Design — Folayemi Brown
+Design Assistance — Philip Fagbeyiro
+
+        </p>
+        <p>
+Available for purchase by email via           <a
+            href="https://www.ft.com/content/a12bb6b1-798d-4863-8b49-104a56ccc716#comments-anchor"
+            target="_blank"
+  rel="noopener noreferrer"
+            title="Gun For Hire"
+class="ml-2 galleryLink"
+          >
+info@padalagos.com.          </a>
+        </p>
+  
+  
+  `}
+                      category="gfh"
+                      alt="Gun For Hire"
+                      backButton
+                      arrow
+                    />
+                  </AnimatePresence>
+                }
+              />
+
+              
               <Route
                 path="/commissions/gun-for-hire"
                 element={

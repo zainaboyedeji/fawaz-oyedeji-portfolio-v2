@@ -3,6 +3,14 @@ import { PhotoMetadata } from "./components/gallery";
 const vertical = "5/6";
 const horizontal = "3/2";
 
+export const afpPhotosMetadata: PhotoMetadata[] = [
+  { aspectRatio: horizontal },
+  { aspectRatio: horizontal },
+  { aspectRatio: horizontal },
+  { aspectRatio: horizontal },
+  { aspectRatio: horizontal },
+];
+
 export const mampPhotosMetadata: PhotoMetadata[] = [
   { aspectRatio: horizontal },
   { aspectRatio: horizontal },

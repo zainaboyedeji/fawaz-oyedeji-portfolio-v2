@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SideBar from "./components/sidebar";
 import Projects from "./pages/projects";
+import AFPCommissions from "./pages/afp-commissions";
 import Commissions from "./pages/commissions";
 import ContactMe from "./pages/contact-me";
 import AboutMe from "./pages/about-me";
@@ -12,6 +13,7 @@ import LoadingSpinner from "./components/loading-spinner";
 import CVPage from "./pages/cv-page";
 import {
   attestationPhotosMetadata,
+  afpPhotosMetadata,
   gfhPhotosMetadata,
   padalagosPhotosMetadata,
   kinfolkPhotosMetadata,
@@ -197,6 +199,11 @@ Photographs produced for AFMAC (African Film and Media Arts Collective), an init
                     />
                   </AnimatePresence>
                 }
+              />
+
+              <Route
+                path="/commissions/afp"
+                element={<AFPCommissions />}
               />
 
               <Route

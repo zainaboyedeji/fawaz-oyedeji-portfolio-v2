@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { motion, useIsPresent } from "framer-motion";
 import { NavLink } from "react-router-dom";
 
-function Commissions() {
+function AFPCommissions() {
   const isPresent = useIsPresent();
 
   useEffect(() => {
@@ -168,53 +168,28 @@ function Commissions() {
       `}</style>
       <article>
         <h1 className="text-center text-5xl font-bold mt-24 lg:text-8xl sm:mt-16">
-          Commissions
+          Agence France-Presse [AFP]
         </h1>
         <ul className="commissionsUL mt-5">
+          {/* Add AFP specific links here */}
           <li className="commissionsLI">
-            <NavLink to="/commissions/afp">
-              Agence France-Presse [AFP]
-            </NavLink>
+            <NavLink to="#">Miss Universe Nigeria Boot Camp </NavLink>
           </li>
 
           <li className="commissionsLI">
-            <NavLink to="/commissions/pada-lagos">
-              Padà Lagos - Directory
-            </NavLink>
-          </li>
-          <li className="commissionsLI">
-            <NavLink to="/commissions/gun-for-hire">
-              Financial TImes - Gun For Hire
-            </NavLink>
-          </li>
-          <li className="commissionsLI">
-            <NavLink to="/commissions/new-culture-studios-ibadan">
-              Architectural Review - New Culture Studios
-            </NavLink>
+            <NavLink to="#">Femi Kuti at the New Afrika Shrine </NavLink>
           </li>
 
           <li className="commissionsLI">
-            <NavLink to="/commissions/afmac-bmw">
-              AFMAC / BMW Group Culture - Photo Journal, Lagos
-            </NavLink>
+            <NavLink to="#">AFCON Final Nigeria Supporters in Lagos </NavLink>
           </li>
 
           <li className="commissionsLI">
-            <NavLink to="/commissions/hidden-flows">
-              ICLEI Africa - Hidden Flows
-            </NavLink>
+            <NavLink to="#">Fuel Scarcity in Lagos </NavLink>
           </li>
 
           <li className="commissionsLI">
-            <NavLink to="/commissions/nigerian-policing-programme">
-              Tetra Tech - Nigerian Policing Programme
-            </NavLink>
-          </li>
-
-          <li className="commissionsLI">
-            <NavLink to="/commissions/kinfolk">
-              KINFOLK - Portrait, Folyemi Brown
-            </NavLink>
+            <NavLink to="#">Cost of Living Protest </NavLink>
           </li>
         </ul>
         <motion.div
@@ -232,4 +207,4 @@ function Commissions() {
   );
 }
 
-export default Commissions;
+export default AFPCommissions;

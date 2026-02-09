@@ -13,6 +13,11 @@ import LoadingSpinner from "./components/loading-spinner";
 import CVPage from "./pages/cv-page";
 import {
   attestationPhotosMetadata,
+  afpMissUniversePhotosMetadata,
+  afpFemiKutiPhotosMetadata,
+  afpAfconPhotosMetadata,
+  afpFuelScarcityPhotosMetadata,
+  afpCostOfLivingPhotosMetadata,
   afpPhotosMetadata,
   gfhPhotosMetadata,
   padalagosPhotosMetadata,
@@ -204,6 +209,86 @@ Photographs produced for AFMAC (African Film and Media Arts Collective), an init
               <Route
                 path="/commissions/afp"
                 element={<AFPCommissions />}
+              />
+              <Route
+                path="/commissions/afp/miss-universe"
+                element={
+                  <AnimatePresence mode="wait">
+                    <Gallery
+                      photos={afpMissUniversePhotosMetadata}
+                      title="Miss Universe Nigeria Boot Camp"
+                      essay={`<p>Miss Universe Nigeria Boot Camp</p>`}
+                      category="afp-miss-universe"
+                      alt="Miss Universe Nigeria Boot Camp"
+                      backButton
+                      arrow
+                    />
+                  </AnimatePresence>
+                }
+              />
+              <Route
+                path="/commissions/afp/femi-kuti"
+                element={
+                  <AnimatePresence mode="wait">
+                    <Gallery
+                      photos={afpFemiKutiPhotosMetadata}
+                      title="Femi Kuti at the New Afrika Shrine"
+                      essay={`<p>Femi Kuti at the New Afrika Shrine</p>`}
+                      category="afp-femi-kuti"
+                      alt="Femi Kuti at the New Afrika Shrine"
+                      backButton
+                      arrow
+                    />
+                  </AnimatePresence>
+                }
+              />
+              <Route
+                path="/commissions/afp/afcon"
+                element={
+                  <AnimatePresence mode="wait">
+                    <Gallery
+                      photos={afpAfconPhotosMetadata}
+                      title="AFCON Final Nigeria Supporters in Lagos"
+                      essay={`<p>AFCON Final Nigeria Supporters in Lagos</p>`}
+                      category="afp-afcon"
+                      alt="AFCON Final Nigeria Supporters in Lagos"
+                      backButton
+                      arrow
+                    />
+                  </AnimatePresence>
+                }
+              />
+              <Route
+                path="/commissions/afp/fuel-scarcity"
+                element={
+                  <AnimatePresence mode="wait">
+                    <Gallery
+                      photos={afpFuelScarcityPhotosMetadata}
+                      title="Fuel Scarcity in Lagos"
+                      essay={`<p>Fuel Scarcity in Lagos</p>`}
+                      category="afp-fuel-scarcity"
+                      alt="Fuel Scarcity in Lagos"
+                      backButton
+                      arrow
+                    />
+                  </AnimatePresence>
+                }
+              />
+              <Route
+                path="/commissions/afp/cost-of-living"
+                element={
+                  <AnimatePresence mode="wait">
+                    <Gallery
+                      photos={afpCostOfLivingPhotosMetadata}
+                      title="Cost of Living Protest"
+                      essay={`<p>Cost of Living Protest</p>`}
+                      category="afp-cost-of-living"
+                      alt="Cost of Living Protest"
+                      backButton
+                      arrow
+                    />
+                  </AnimatePresence>
+                }
               />
 
               <Route

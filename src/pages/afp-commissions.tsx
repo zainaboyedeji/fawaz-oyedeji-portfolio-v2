@@ -173,23 +173,23 @@ function AFPCommissions() {
         <ul className="commissionsUL mt-5">
           {/* Add AFP specific links here */}
           <li className="commissionsLI">
-            <NavLink to="#">Miss Universe Nigeria Boot Camp </NavLink>
+            <NavLink to="/commissions/afp/miss-universe">Miss Universe Nigeria Boot Camp </NavLink>
           </li>
 
           <li className="commissionsLI">
-            <NavLink to="#">Femi Kuti at the New Afrika Shrine </NavLink>
+            <NavLink to="/commissions/afp/femi-kuti">Femi Kuti at the New Afrika Shrine </NavLink>
           </li>
 
           <li className="commissionsLI">
-            <NavLink to="#">AFCON Final Nigeria Supporters in Lagos </NavLink>
+            <NavLink to="/commissions/afp/afcon">AFCON Final Nigeria Supporters in Lagos </NavLink>
           </li>
 
           <li className="commissionsLI">
-            <NavLink to="#">Fuel Scarcity in Lagos </NavLink>
+            <NavLink to="/commissions/afp/fuel-scarcity">Fuel Scarcity in Lagos </NavLink>
           </li>
 
           <li className="commissionsLI">
-            <NavLink to="#">Cost of Living Protest </NavLink>
+            <NavLink to="/commissions/afp/cost-of-living">Cost of Living Protest </NavLink>
           </li>
         </ul>
         <motion.div

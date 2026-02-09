@@ -3,6 +3,36 @@ import { PhotoMetadata } from "./components/gallery";
 const vertical = "5/6";
 const horizontal = "3/2";
 
+export const afpMissUniversePhotosMetadata: PhotoMetadata[] = [
+  { aspectRatio: horizontal },
+  { aspectRatio: horizontal },
+  { aspectRatio: horizontal },
+];
+
+export const afpFemiKutiPhotosMetadata: PhotoMetadata[] = [
+  { aspectRatio: horizontal },
+  { aspectRatio: horizontal },
+  { aspectRatio: horizontal },
+];
+
+export const afpAfconPhotosMetadata: PhotoMetadata[] = [
+  { aspectRatio: horizontal },
+  { aspectRatio: horizontal },
+  { aspectRatio: horizontal },
+];
+
+export const afpFuelScarcityPhotosMetadata: PhotoMetadata[] = [
+  { aspectRatio: horizontal },
+  { aspectRatio: horizontal },
+  { aspectRatio: horizontal },
+];
+
+export const afpCostOfLivingPhotosMetadata: PhotoMetadata[] = [
+  { aspectRatio: horizontal },
+  { aspectRatio: horizontal },
+  { aspectRatio: horizontal },
+];
+
 export const afpPhotosMetadata: PhotoMetadata[] = [
   { aspectRatio: horizontal },
   { aspectRatio: horizontal },

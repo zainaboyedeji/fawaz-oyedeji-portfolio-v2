@@ -128,8 +128,8 @@ info@padalagos.com.          </a>
   
   
   `}
-                      category="gfh"
-                      alt="Gun For Hire"
+                      category="padalagos"
+                      alt="Padà Lagos"
                       backButton
                       arrow
                     />

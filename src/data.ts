@@ -117,6 +117,11 @@ export const afmacbmwPhotosMetadata: PhotoMetadata[] = [
   { aspectRatio: horizontal },
 ];
 
+export const kinfolkPhotosMetadata: PhotoMetadata[] = [
+  { aspectRatio: horizontal },
+  { aspectRatio: horizontal },
+];
+
 export const padalagosPhotosMetadata: PhotoMetadata[] = [
   { aspectRatio: horizontal },
   { aspectRatio: horizontal },
@@ -148,7 +153,7 @@ export const homePhotosMetadata: PhotoMetadata[] = [
 ];
 
 export const tearSheetPhotosMetadata: PhotoMetadata[] = [
-  { aspectRatio: vertical, description: "March 20, 2025, NPR" },
+  { aspectRatio: vertical, description: "Sept 9, 2025, Kinfolk Magazine" },
 
   { aspectRatio: vertical, description: "March 20, 2025, NPR" },
   { aspectRatio: vertical, description: "Nov 15, 2024, The Guardian" },

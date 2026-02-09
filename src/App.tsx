@@ -14,6 +14,7 @@ import {
   attestationPhotosMetadata,
   gfhPhotosMetadata,
   padalagosPhotosMetadata,
+  kinfolkPhotosMetadata,
   afmacbmwPhotosMetadata,
   hiddenflowsPhotosMetadata,
   homePhotosMetadata,
@@ -54,7 +55,7 @@ function App() {
           <main className="flex flex-col flex-grow justify-between">
             <Routes>
               <Route
-                path="/" 
+                path="/"
                 element={
                   <AnimatePresence mode="wait">
                     <Gallery
@@ -93,9 +94,7 @@ function App() {
               />
               <Route path="/multimedia" element={<Multimedia />} />
 
-
-
-  <Route
+              <Route
                 path="/commissions/pada-lagos"
                 element={
                   <AnimatePresence mode="wait">
@@ -138,14 +137,42 @@ function App() {
               />
 
 
+                   <Route
+                path="/commissions/kinfolk"
+                element={
+                  <AnimatePresence mode="wait">
+                    <Gallery
+                      photos={kinfolkPhotosMetadata}
+                      title="Kinfolk - Directory"
+                      essay={`
+   
+          <p>
+KINFOLK MAGAZINE - Portrait, Folayemi Brown
+ 
+          </p>
+        
+        <p>
+         Commissioned editorial portrait for Kinfolk Magazine, photographed in Lagos. The work accompanies a feature on Folayemi Brown, documenting his practice and presence within the city’s contemporary cultural landscape.
+        </p>
+  
+  
+  `}
+                      category="kinfolk"
+                      alt="Kinfolk"
+                      backButton
+                      arrow
+                    />
+                  </AnimatePresence>
+                }
+              />
 
-  <Route
+              <Route
                 path="/commissions/afmac-bmw"
                 element={
                   <AnimatePresence mode="wait">
                     <Gallery
                       photos={afmacbmwPhotosMetadata}
-                      title="AFMAC / BMW Group Culture - Photo Journal, Lagos"  
+                      title="AFMAC / BMW Group Culture - Photo Journal, Lagos"
                       essay={`
    
           <p>
@@ -172,7 +199,6 @@ Photographs produced for AFMAC (African Film and Media Arts Collective), an init
                 }
               />
 
-              
               <Route
                 path="/commissions/gun-for-hire"
                 element={

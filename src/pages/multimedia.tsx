@@ -5,7 +5,7 @@ function Multimedia() {
   const isPresent = useIsPresent();
   useEffect(() => {
     document.body.style.overflow = "hidden";
-        return () => {
+    return () => {
       document.body.style.overflow = "";
     };
   }, []);
@@ -15,18 +15,17 @@ function Multimedia() {
         <div className="flex h-[60vh]">
           <iframe
             title="vimeo video"
-            src="https://player.vimeo.com/video/1019928845"
+            src="https://player.vimeo.com/video/1161926427"
             className="w-full"
             allow="autoplay; fullscreen; picture-in-picture"
             allowFullScreen
           ></iframe>
         </div>
 
-
-         <div className="flex h-[60vh]">
+        <div className="flex h-[60vh] mt-10">
           <iframe
             title="vimeo video"
-            src="https://player.vimeo.com/video/1161926427"
+            src="https://player.vimeo.com/video/1019928845"
             className="w-full"
             allow="autoplay; fullscreen; picture-in-picture"
             allowFullScreen

@@ -212,7 +212,7 @@ function Commissions() {
           </li>
 
           <li className="commissionsLI">
-            <NavLink to="/commissions/nigerian-policing-programme">
+            <NavLink to="/commissions/kinfolk">
               KINFOLK - Portrait, Folyemi Brown
             </NavLink>
           </li>

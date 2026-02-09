@@ -7,7 +7,7 @@ function Commissions() {
 
   useEffect(() => {
     document.body.style.overflow = "hidden";
-        return () => {
+    return () => {
       document.body.style.overflow = "";
     };
   }, []);
@@ -167,23 +167,54 @@ function Commissions() {
         }
       `}</style>
       <article>
-        <h1 className="text-center text-5xl font-bold mt-24 lg:text-8xl sm:mt-16">Commissions</h1>
+        <h1 className="text-center text-5xl font-bold mt-24 lg:text-8xl sm:mt-16">
+          Commissions
+        </h1>
         <ul className="commissionsUL mt-5">
           <li className="commissionsLI">
-            <NavLink to="/commissions/gun-for-hire">Gun For Hire</NavLink>
+            <NavLink to="/commissions/gun-for-hire">
+              Agence France-Presse [AFP]
+            </NavLink>
+          </li>
+
+          <li className="commissionsLI">
+            <NavLink to="/commissions/gun-for-hire">
+              Padà Lagos - Directory
+            </NavLink>
+          </li>
+          <li className="commissionsLI">
+            <NavLink to="/commissions/gun-for-hire">
+              Financial TImes - Gun For Hire
+            </NavLink>
           </li>
           <li className="commissionsLI">
             <NavLink to="/commissions/new-culture-studios-ibadan">
-              New Culture Studios Ibadan
+              Architectural Review - New Culture Studios
             </NavLink>
           </li>
+
           <li className="commissionsLI">
             <NavLink to="/commissions/nigerian-policing-programme">
-              Nigerian Policing Programme
+              AFMAC / BMW Group Culture - Photo Journal, Lagos
             </NavLink>
           </li>
+
           <li className="commissionsLI">
-            <NavLink to="/commissions/hidden-flows">Hidden Flows</NavLink>
+            <NavLink to="/commissions/hidden-flows">
+              ICLEI Africa - Hidden Flows
+            </NavLink>
+          </li>
+
+          <li className="commissionsLI">
+            <NavLink to="/commissions/nigerian-policing-programme">
+              Tetra Tech - Nigerian Policing Programme
+            </NavLink>
+          </li>
+
+          <li className="commissionsLI">
+            <NavLink to="/commissions/nigerian-policing-programme">
+              KINFOLK - Portrait, Folyemi Brown
+            </NavLink>
           </li>
         </ul>
         <motion.div

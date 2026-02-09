@@ -124,6 +124,8 @@ export const homePhotosMetadata: PhotoMetadata[] = [
 ];
 
 export const tearSheetPhotosMetadata: PhotoMetadata[] = [
+    { aspectRatio: vertical, description: "March 20, 2025, NPR" },
+
   { aspectRatio: vertical, description: "March 20, 2025, NPR" },
   { aspectRatio: vertical, description: "Nov 15, 2024, The Guardian" },
   { aspectRatio: horizontal, description: "July 15, 2024, Les Echos" },

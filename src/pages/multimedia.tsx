@@ -21,6 +21,17 @@ function Multimedia() {
             allowFullScreen
           ></iframe>
         </div>
+
+
+         <div className="flex h-[60vh]">
+          <iframe
+            title="vimeo video"
+            src="https://player.vimeo.com/video/1161926427"
+            className="w-full"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </div>
       </div>
       <motion.div
         initial={{ scaleX: 1 }}

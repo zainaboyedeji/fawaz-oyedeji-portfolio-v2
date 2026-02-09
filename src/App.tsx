@@ -107,23 +107,22 @@ function App() {
             Padà, The Directory is a book by Padà Lagos documenting twenty accessible public spaces on Lagos Island.
  -
           </p>
+        <p style="margin-bottom: 0;">Credits:</p>
+        <ul class="list-none" style="margin-bottom: 30px; padding-left: 0; font-size: 17px;">
+          <li>Photography — Fawaz Oyedeji</li>
+          <li>Cartography — Add.apt & Marco Phillip</li>
+          <li>Words & Design — Folayemi Brown</li>
+          <li>Design Assistance — Philip Fagbeyiro</li>
+        </ul>
         <p>
-          Credits:
-Photography — Fawaz Oyedeji
-Cartography — Add.apt & Marco Phillip
-Words & Design — Folayemi Brown
-Design Assistance — Philip Fagbeyiro
-
-        </p>
-        <p>
-Available for purchase by email via           <a
-            href="https://www.ft.com/content/a12bb6b1-798d-4863-8b49-104a56ccc716#comments-anchor"
-            target="_blank"
-  rel="noopener noreferrer"
-            title="Gun For Hire"
-class="ml-2 galleryLink"
+          Available for purchase by email via
+          <a
+            href="mailto:info@padalagos.com"
+            title="Email Padà Lagos"
+            class="ml-2 galleryLink"
           >
-info@padalagos.com.          </a>
+            info@padalagos.com.
+          </a>
         </p>
   
   

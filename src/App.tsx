@@ -18,7 +18,6 @@ import {
   afpAfconPhotosMetadata,
   afpFuelScarcityPhotosMetadata,
   afpCostOfLivingPhotosMetadata,
-  afpPhotosMetadata,
   gfhPhotosMetadata,
   padalagosPhotosMetadata,
   kinfolkPhotosMetadata,
@@ -217,8 +216,10 @@ Photographs produced for AFMAC (African Film and Media Arts Collective), an init
                     <Gallery
                       photos={afpMissUniversePhotosMetadata}
                       title="Miss Universe Nigeria Boot Camp"
-                      essay={`<p>Miss Universe Nigeria Boot Camp</p>`}
-                      category="afp-miss-universe"
+                      essay={`
+
+<p> Selected photographs from an Agence France-Presse (AFP) assignment documenting contestants during the Miss Universe Nigeria boot camp in Lagos, August 2024. </p>`}
+                      category="afpmbgncamp"
                       alt="Miss Universe Nigeria Boot Camp"
                       backButton
                       arrow
@@ -233,8 +234,9 @@ Photographs produced for AFMAC (African Film and Media Arts Collective), an init
                     <Gallery
                       photos={afpFemiKutiPhotosMetadata}
                       title="Femi Kuti at the New Afrika Shrine"
-                      essay={`<p>Femi Kuti at the New Afrika Shrine</p>`}
-                      category="afp-femi-kuti"
+                      essay={`<p>Selected photographs from an Agence France-Presse (AFP) assignment documenting Femi Kuti during rehearsal and performance at the New Afrika Shrine, Lagos, April 2025.
+</p>`}
+                      category="afpfemikuti"
                       alt="Femi Kuti at the New Afrika Shrine"
                       backButton
                       arrow
@@ -249,8 +251,8 @@ Photographs produced for AFMAC (African Film and Media Arts Collective), an init
                     <Gallery
                       photos={afpAfconPhotosMetadata}
                       title="AFCON Final Nigeria Supporters in Lagos"
-                      essay={`<p>AFCON Final Nigeria Supporters in Lagos</p>`}
-                      category="afp-afcon"
+                      essay={`<p>Selected photographs from an Agence France-Presse (AFP) assignment documenting Nigerian supporters watching the Africa Cup of Nations 2024 final in Lagos, February 2024.</p>`}
+                      category="afpfootball"
                       alt="AFCON Final Nigeria Supporters in Lagos"
                       backButton
                       arrow
@@ -265,8 +267,8 @@ Photographs produced for AFMAC (African Film and Media Arts Collective), an init
                     <Gallery
                       photos={afpFuelScarcityPhotosMetadata}
                       title="Fuel Scarcity in Lagos"
-                      essay={`<p>Fuel Scarcity in Lagos</p>`}
-                      category="afp-fuel-scarcity"
+                      essay={`<p>Selected photographs from an Agence France-Presse (AFP) assignment documenting fuel queues in Lagos during nationwide petrol shortages, September 2024.</p>`}
+                      category="afppetrolscarcity"
                       alt="Fuel Scarcity in Lagos"
                       backButton
                       arrow
@@ -281,8 +283,8 @@ Photographs produced for AFMAC (African Film and Media Arts Collective), an init
                     <Gallery
                       photos={afpCostOfLivingPhotosMetadata}
                       title="Cost of Living Protest"
-                      essay={`<p>Cost of Living Protest</p>`}
-                      category="afp-cost-of-living"
+                      essay={`<p>Selected photographs from an Agence France-Presse (AFP) assignment documenting demonstrations and a mourning vigil for victims of a security crackdown during Nigeria’s cost-of-living protests in Lagos, August 2024.</p>`}
+                      category="afpprotest"
                       alt="Cost of Living Protest"
                       backButton
                       arrow

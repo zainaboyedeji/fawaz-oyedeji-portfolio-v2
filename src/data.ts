@@ -12,7 +12,6 @@ export const afpMissUniversePhotosMetadata: PhotoMetadata[] = [
 export const afpFemiKutiPhotosMetadata: PhotoMetadata[] = [
   { aspectRatio: horizontal },
   { aspectRatio: horizontal },
-  { aspectRatio: horizontal },
 ];
 
 export const afpAfconPhotosMetadata: PhotoMetadata[] = [

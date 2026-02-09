@@ -51,9 +51,19 @@ function AboutMe() {
             Commissions/Publications
           </h6>
           <p>
-            • 2025: "Can you look at these 9 photos and not smile on
+            • 2025: Photobook Directory of Publicly Accessible Spaces in Lagos
+            Island — Padá Lagos
+          </p>
+          <p>• 2025: Portraits of Folayemi Brown - Kinfolk Magazine</p>
+          <p>
+            • 2025: Photo Documentation in Lagos – PACIFIC / A.F.M.A.C / BMW Art
+            Group
+          </p>
+          <p>
+            • 2025 : "Can you look at these 9 photos and not smile on
             International Day of Happiness?" – National Public Radio [NPR]
           </p>
+          <p>• 2025: Photo Reportage in Lagos - Agence France-Presse [AFP]</p>
           <p>
             • 2024: "Nigeria, the Largest Democracy in Africa, Bends Under the
             'Wahala'" – Les Echos
@@ -89,13 +99,17 @@ function AboutMe() {
         <div className="mt-5">
           <h6 className="mb-5 text-3xl">Group Exhibitions</h6>
           <p>
+            • 2025 : HOA.Africa Exhibition – Institut Français, Rabat, Morocco
+          </p>
+          <p>
             • 2025: Magnum Photos / African Artists’ Foundation / Odesa Photo
-            Days - Beyond The Silence, Ukraine
+            Days - Beyond The Silence, Ukraine / Nigeria
           </p>
           <p>
             • 2024: Magnum Photos / African Artists’ Foundation / Odesa Photo
-            Days - Beyond The Silence, Kazakhstan / Mexico
+            Days - Beyond The Silence, Kazakhstan / Mexico / Cambodia
           </p>
+          <p>• 2024 : Africa Foto Fair, Côte d'Ivoire</p>
           <p>
             • 2024: Christian Dior Parfums / LUMA Arles – Dior Photography and
             Visual Arts Award for Young Talents, Arles, France

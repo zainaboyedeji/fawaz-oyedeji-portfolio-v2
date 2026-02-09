@@ -14,6 +14,7 @@ import {
   attestationPhotosMetadata,
   gfhPhotosMetadata,
   padalagosPhotosMetadata,
+  afmacbmwPhotosMetadata,
   hiddenflowsPhotosMetadata,
   homePhotosMetadata,
   mampPhotosMetadata,
@@ -129,6 +130,41 @@ function App() {
   `}
                       category="padalagos"
                       alt="Padà Lagos"
+                      backButton
+                      arrow
+                    />
+                  </AnimatePresence>
+                }
+              />
+
+
+
+  <Route
+                path="/commissions/afmac-bmw"
+                element={
+                  <AnimatePresence mode="wait">
+                    <Gallery
+                      photos={afmacbmwPhotosMetadata}
+                      title="AFMAC / BMW Group Culture - Photo Journal, Lagos"  
+                      essay={`
+   
+          <p>
+AFMAC / BMW Group Culture
+
+Photographs produced for AFMAC (African Film and Media Arts Collective), an initiative founded by Julie Mehretu in collaboration with Mehret Mandefro and BMW Group Culture. Shot in Lagos, Nigeria, April 2025, documenting the AFMAC workshop, the city, and its people. -
+          </p>
+        <p style="margin-bottom: 0;">To explore more about this project:</p>
+        <ul class="list-none" style="margin-bottom: 30px; padding-left: 0; font-size: 17px;">
+          <li>Dive into the full photo series. → View the Photo Journal</li>
+          <li>Read the official announcement about the AFMAC initiative and its connection to the BMW Art Car project. → Read the Press Release</li>
+         
+        </ul>
+      
+  
+  
+  `}
+                      category="afmacbmw"
+                      alt="AFMAC / BMW Group Culture"
                       backButton
                       arrow
                     />

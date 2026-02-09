@@ -194,7 +194,7 @@ function Commissions() {
           </li>
 
           <li className="commissionsLI">
-            <NavLink to="/commissions/nigerian-policing-programme">
+            <NavLink to="/commissions/afmac-bmw">
               AFMAC / BMW Group Culture - Photo Journal, Lagos
             </NavLink>
           </li>

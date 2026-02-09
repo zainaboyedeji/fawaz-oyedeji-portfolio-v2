@@ -108,6 +108,15 @@ export const gfhPhotosMetadata: PhotoMetadata[] = [
   { aspectRatio: horizontal },
 ];
 
+export const afmacbmwPhotosMetadata: PhotoMetadata[] = [
+  { aspectRatio: horizontal },
+  { aspectRatio: horizontal },
+   { aspectRatio: horizontal },
+  { aspectRatio: horizontal },
+  { aspectRatio: horizontal },
+  { aspectRatio: horizontal },
+];
+
 export const padalagosPhotosMetadata: PhotoMetadata[] = [
   { aspectRatio: horizontal },
   { aspectRatio: horizontal },

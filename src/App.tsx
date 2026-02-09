@@ -52,7 +52,7 @@ function App() {
           <main className="flex flex-col flex-grow justify-between">
             <Routes>
               <Route
-                path="/"
+                path="/" 
                 element={
                   <AnimatePresence mode="wait">
                     <Gallery

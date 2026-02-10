@@ -137,7 +137,6 @@ export const hiddenflowsPhotosMetadata: PhotoMetadata[] = [
   { aspectRatio: horizontal },
   { aspectRatio: horizontal },
   { aspectRatio: horizontal },
-  { aspectRatio: horizontal },
 ];
 
 export const gfhPhotosMetadata: PhotoMetadata[] = [

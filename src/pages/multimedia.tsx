@@ -1,14 +1,9 @@
 import { motion, useIsPresent } from "framer-motion";
-import { useEffect } from "react";
+
 
 function Multimedia() {
   const isPresent = useIsPresent();
-  useEffect(() => {
-    document.body.style.overflow = "hidden";
-    return () => {
-      document.body.style.overflow = "";
-    };
-  }, []);
+
   return (
     <>
       <div className="mt-24">

@@ -189,12 +189,7 @@ Photographs produced for AFMAC (African Film and Media Arts Collective), an init
         <p style="margin-bottom: 0;">To explore more about this project:</p>
         <ul class="list-none" style="margin-bottom: 30px; padding-left: 0; font-size: 17px;">
           <li>Dive into the full photo series. → <a href="https://afmac.institute/journal/photo-journal-with-fawaz-oyedeji-in-lagos-1/" target="_blank" rel="noopener noreferrer" class="galleryLink">View the Photo Journal</a></li>
-          <li>Read the official announcement about the AFMAC initiative and its connection to the BMW Art Car project. → <a href="https://www.press.bmwgroup.com/global/article/detail/T0455191EN/..." target="_blank" rel="noopener noreferrer" class="galleryLink">Read the Press Release</a></li>
-         
         </ul>
-      
-  
-  
   `}
                       category="afmacbmw"
                       alt="AFMAC / BMW Group Culture"

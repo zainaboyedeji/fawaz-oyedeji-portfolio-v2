@@ -8,13 +8,13 @@ function Multimedia() {
     <>
       <div className="mt-24">
         <div className="flex h-[60vh]">
-          <iframe
-            title="vimeo video"
-            src="https://player.vimeo.com/video/1161926427"
-            className="w-full"
-            allow="autoplay; fullscreen; picture-in-picture"
-            allowFullScreen
-          ></iframe>
+         <iframe
+  title="vimeo video"
+  src="https://player.vimeo.com/video/1182409810?autoplay=1&muted=1&loop=1&background=1"
+  className="w-full"
+  allow="autoplay; fullscreen; picture-in-picture"
+  allowFullScreen
+></iframe>
         </div>
 
         <div className="flex h-[60vh] mt-10">

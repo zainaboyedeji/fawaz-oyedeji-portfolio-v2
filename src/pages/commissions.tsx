@@ -184,7 +184,7 @@ function Commissions() {
           </li>
           <li className="commissionsLI">
             <NavLink to="/commissions/gun-for-hire">
-              Financial TImes - Gun For Hire
+              Financial Times - Gun For Hire
             </NavLink>
           </li>
           <li className="commissionsLI">
